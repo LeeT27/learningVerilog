@@ -10,7 +10,7 @@ My first Verilog project focused on designing and combining basic logic gates to
 
 **Key Features / Learning Outcomes**  
 - Initialized logic gate modules ('and_gate', 'or_gate') with two input ports and one output
-- Created a top module to combine sub-modules with every input combination (00,01,11,10)
+- Created a top module to combine sub-modules with every input combination
 - Configured a testbench to verify correct logic operation
 - Learned to simulate Verilog code using **Iverilog** and visualize waveforms with **GTKWave**.
-- Generated and analyzed waveform files (\`.vcd\`) to confirm truth table outputs
+- Generated and analyzed waveform files (`.vcd`) to confirm truth table outputs
