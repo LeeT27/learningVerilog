@@ -9,7 +9,7 @@ Self-studying Verilog, my first HDL, through projects simulated with Icarus Veri
 My first Verilog project focused on designing and combining basic logic gates to simulate (A AND B) OR C in a waveform
 
 **Key Features / Learning Outcomes**  
-- Initialized logic gate modules ('and_gate', 'or_gate') with two input ports and one output
+- Initialized logic gate modules (`and_gate`, `or_gate`) with two input ports and one output
 - Created a top module to combine sub-modules with every input combination
 - Configured a testbench to verify correct logic operation
 - Learned to simulate Verilog code using **Iverilog** and visualize waveforms with **GTKWave**.
