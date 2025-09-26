@@ -15,10 +15,10 @@ My first Verilog project focused on designing and combining basic logic gates to
 **Key Features / Learning Outcomes**  
 - Simulated **(A AND B) OR C**
 - Initialized logic gate modules (`and_gate`, `or_gate`) with two input ports and one output
-- Created a top module to combine sub-modules with every input combination
-- Configured a testbench to verify correct logic operation
-- Learned to simulate Verilog code using **Icarus Verilog** and visualize waveforms with **GTKWave**.
-- Generated and analyzed waveform files (`.vcd`) to confirm truth table outputs\n
+- Created a top module to combine sub-modules to create the corresponding gate logic
+- Configured a testbench to verify each input combination `a`, `b`, and `c`
+- Learned to simulate Verilog code using **Icarus Verilog** and visualize waveforms with **GTKWave**
+- Generated and analyzed waveform files (`.vcd`) using the terminal to confirm truth table outputs
 
 ## [Project 2: 8-Bit Ripple Carry Adder](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%20Ripple%20Carry%20Adder%20(RCA)) (9/25/25)
 This project implements an 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning a 9-bit output (including carry-out).
@@ -28,10 +28,10 @@ This project implements an 8-bit ripple carry adder that computes the sum of two
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/1fe4ecfe-c4d0-4976-8105-e50a13545cd9" />
 
 **Key Features / Learning Outcomes**  
-- Implemented **full adder modules** using XOR, AND, and OR gates, and learned the theory behind bitwise addition
+- Implemented **full adder modules** using XOR, AND, and OR gates, and learned the theory behind ripple addition
 - Displayed testbench results to the terminal using `$display`
-- Learned to initialize **multi-bit inputs, outputs, and wires**
-- Learned Verilog **loops** and the `generate` keyword to create multiple instances of `full_adder` at once
+- Learned to initialize **multi-bit inputs, outputs, wires, and registers**
+- Learned Verilog **loop** syntax and the `generate` keyword to create multiple instances of `full_adder`
 - Accommodated an **extra bit in the top module output** to handle carry-out and prevent overflow
 
 ## [Project 3: 32-Bit 4x8-to-1 Multiplexer (MUX)](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%204x8-to-1%20Multiplexer%20(MUX)) (9/26/25)
