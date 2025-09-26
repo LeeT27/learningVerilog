@@ -54,8 +54,10 @@ This project implements an 8-bit 3-to-8 decoder that uses two 2-to-4 decoder mod
 
 **Key Features / Learning Outcomes**  
 - Built two 2-to-4 decoder modules, each producing a 4-bit output based on a 2-bit input
-- The output returns all 0's except for a 1 positioned at bit #<decimal_input_value>
-- 
+- The 8-bit output returns all 0's except for a 1 positioned at bit #<decimal_input_value>
+- Used the top bit as a toggle to activate either the upper or lower half decoder
+- Learned to concantate two values. e.g. `{<a>,<b>}`
+- Able to select decoders through toggle instead of ternary operaters > cleaner and more organized
 
 To do:  
 ALU  
