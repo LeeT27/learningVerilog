@@ -52,6 +52,7 @@ This project implements a 32-to-1 multiplexer using four 8-to-1 MUX modules, all
 To do:  
 Decoder
 ALU  
+Sequential?
 CPU components  
 Mini CPU  
 RAM  
