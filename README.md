@@ -47,7 +47,7 @@ This project implements a 32-to-1 multiplexer using four 8-to-1 MUX modules, all
 - Learned how to express **multi-bit values** in binary (`b`), hexademical (`h`), or decimal (`d`) using the format, `<# of bits>'<base><value>` (e.g., `8'h1F`)
 
 ## [Project 4: 8-Bit 2x2-4 Decoder](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%202x2-to-4%20Decoder) (9/26/25)
-This project implements an 8-bit 3-to-8 decoder that uses two 2-to-4 decoder modules. The first two bits determine the possible output of the upper or lower 4 bits, using one or the other decoder. The last bit, EN, toggles which decoder is used.
+This project implements an 8-bit 3-to-8 decoder that uses two 2-to-4 decoder modules. The first two bits determine the possible output of the upper or lower 4 bits, using one or the other decoder. The last bit, EN, toggles whether the upper or lower decoder is used
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/ee7c2d30-7a93-48cf-87fa-a02399f1214e" />\n
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/ce47c8a0-38c5-4af5-a370-1f9959cc8c15" />
@@ -56,6 +56,7 @@ This project implements an 8-bit 3-to-8 decoder that uses two 2-to-4 decoder mod
 - Built two 2-to-4 decoder modules, each producing a 4-bit output based on a 2-bit input
 - The 8-bit output returns all 0's except for a 1 positioned at bit #<decimal_input_value>
 - Used the top bit as a toggle to activate either the upper or lower half decoder
+- If the upper decoder was enabled, four 0's were concanted to the end, if the bottom was enabled, four 0's were concanted to the beginning
 - Learned to concantate two values. e.g. `{<a>,<b>}`
 - Able to select decoders through toggle instead of ternary operaters > cleaner and more organized
 
