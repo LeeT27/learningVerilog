@@ -39,8 +39,8 @@ To do:
 Multiplexer  
 Encoder  
 ALU  
-CPU components
-Mini CPU
-RAM
-VGA game
+CPU components  
+Mini CPU  
+RAM  
+VGA game  
 Final project
