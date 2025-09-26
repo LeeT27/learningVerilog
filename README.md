@@ -13,8 +13,8 @@ My first Verilog project focused on designing and combining basic logic gates to
 
 **Key Features / Learning Outcomes**  
 - Simulated **(A AND B) OR C**
-- Initialized logic gate modules (`and_gate`, `or_gate`) with two input ports and one output
-- Created a top module to combine sub-modules to create the corresponding gate logic
+  - Initialized logic gate modules (`and_gate`, `or_gate`) with two input ports and one output
+  - Created a top module to combine sub-modules to create the corresponding gate logic
 - Configured a testbench to verify each input combination `a`, `b`, and `c`
 - Learned to simulate Verilog code using **Icarus Verilog** and visualize waveforms with **GTKWave**
 - Generated and analyzed waveform files (`.vcd`) using the terminal to confirm truth table outputs
@@ -53,18 +53,19 @@ This project implements a 32-to-1 multiplexer using four 8-to-1 MUX modules, all
   - `<# of bits>'<base><value>` (e.g., `8'h1F`)
 
 ## [Project 4: 8-Bit 2x2-4 Decoder](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%202x2-to-4%20Decoder) (9/26/25)
-This project implements an 8-bit 3-to-8 decoder that uses two 2-to-4 decoder modules. The first two bits determine the possible output of the upper or lower 4 bits, using one or the other decoder. The last bit, EN, toggles whether the upper or lower decoder is used
+This project implements an 8-bit 3-to-8 decoder that uses two 2-to-4 decoder modules
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/ee7c2d30-7a93-48cf-87fa-a02399f1214e" />\n
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/ce47c8a0-38c5-4af5-a370-1f9959cc8c15" />
 
 **Key Features / Learning Outcomes**  
-- Built two 2-to-4 decoder modules, each producing a 4-bit output based on a 2-bit input
-  - The 8-bit output returns 0's in all digits except for a 1 positioned at bit `#<decimal_input_value>`
-- Used the top bit as a toggle to activate either the upper or lower half decoder
-- If the upper decoder was enabled, four 0's were concanted to the end, if the bottom was enabled, four 0's were concanted to the beginning
-- Learned to concantate two values. e.g. `{<a>,<b>}`
-- Able to select decoders through toggle instead of ternary operaters > cleaner and more organized
+- Made two 2-to-4 decoder modules, each producing a 4-bit output based on a 2-bit input
+  - The 8-bit output returns 0's in most digits, with a 1 at the position corresponding to the decimal value of the input
+  - The first two input bits determine whether the output appears in the upper or lower 4 bits, using one decoder or the other
+  - The last input bit, `in[2]`, toggles `EN`, which decides whether the upper or lower decoder is active
+  - If the upper decoder is enabled, four 0's are concatenated to the end; if the lower decoder is enabled, four 0's are concatenated to the beginning
+- Learned to concatenate values in Verilog using `{<a>,<b>}`
+- Learned to select which decoder to activate with an enable toggle instead of a ternary operater leading to more organized code
 
 To do:  
 ALU  
