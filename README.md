@@ -34,3 +34,13 @@ This project implements an 8-bit ripple carry adder that computes the sum of two
 - Learned to initialize **multi-bit inputs, outputs, and wires**
 - Learned Verilog **loops** and the `generate` keyword to create multiple instances of `full_adder` at once
 - Accommodated an **extra bit in the top module output** to handle carry-out and prevent overflow
+
+To do:
+Multiplexer  
+Encoder  
+ALU  
+CPU components
+Mini CPU
+RAM
+VGA game
+Final project
