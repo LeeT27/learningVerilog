@@ -13,8 +13,8 @@ My first Verilog project focused on designing and combining basic logic gates to
 <img width="1980" height="827" alt="image" src="https://github.com/user-attachments/assets/6e2d9100-16e8-4d67-875c-3d3085666311" />
 
 **Key Features / Learning Outcomes**  
+- Simulated **(A AND B) OR C**
 - Initialized logic gate modules (`and_gate`, `or_gate`) with two input ports and one output
-- [Project 1: AND-OR Logic Circuit](AND-OR Logic Circuit/)
 - Created a top module to combine sub-modules with every input combination
 - Configured a testbench to verify correct logic operation
 - Learned to simulate Verilog code using **Iverilog** and visualize waveforms with **GTKWave**.
