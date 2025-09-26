@@ -26,11 +26,13 @@ This project implements an 8-bit ripple carry adder that computes the sum of two
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/1fe4ecfe-c4d0-4976-8105-e50a13545cd9" />
 
 **Key Features / Learning Outcomes**  
-- Implemented **full adder modules** using XOR, AND, and OR gates, and learned the theory behind ripple addition
-- Displayed testbench results to the terminal using `$display`
-- Learned to initialize **multi-bit inputs, outputs, wires, and registers**
-- Learned Verilog **loop** syntax and the `generate` keyword to create multiple instances of `full_adder`
+- Implemented **full adder modules** using **XOR**, **AND**, and **OR** gates, and learned the theory behind ripple addition
+-- If odd # of inputs are 1, the sum bit returns 1
+-- If at least two inputs are 1, a 1 is carried out for the next digit
 - Accommodated an **extra bit in the top module output** to handle carry-out and prevent overflow
+- Learned to testbench results to the terminal using `$display`
+- Learned to initialize **multi-bit inputs, outputs, wires, and registers** e.g. `input[7:0] a;`
+- Learned Verilog **loop** syntax and the `generate` keyword to create multiple instances of `full_adder`
 
 ## [Project 3: 32-Bit 4x8-to-1 Multiplexer (MUX)](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%204x8-to-1%20Multiplexer%20(MUX)) (9/26/25)
 This project implements a 32-to-1 multiplexer using four 8-to-1 MUX modules, allowing selection of a single bit from a 32-bit input using a 5-bit select line.
