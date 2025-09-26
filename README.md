@@ -48,7 +48,7 @@ This project implements a 32-to-1 multiplexer using four 8-to-1 MUX modules, all
 - Applied `always @(*)` blocks to ensure outputs automatically update when inputs change
 - Used a **`case` statement** so that every 3-bit selector combination corresponds to its correct bit from the 8-bit input
 - Learned how to use the **ternary operater `? :`** to select the appropriate multiplexor based on bits [5:4] of the main selection line
-  - `<condition> ? <value_if_true> : <value_if_false>`
+  - `<condition> ? <value_if_true> : <value_if_false>` (can be chained)
 - Learned how to express **multi-bit values** in binary (`b`), hexademical (`h`), or decimal (`d`) using the format,
   - `<# of bits>'<base><value>` (e.g., `8'h1F`)
 
@@ -60,7 +60,7 @@ This project implements an 8-bit 3-to-8 decoder that uses two 2-to-4 decoder mod
 
 **Key Features / Learning Outcomes**  
 - Built two 2-to-4 decoder modules, each producing a 4-bit output based on a 2-bit input
-- The 8-bit output returns all 0's except for a 1 positioned at bit #<decimal_input_value>
+  - The 8-bit output returns 0's in all digits except for a 1 positioned at bit #`<decimal_input_value>`
 - Used the top bit as a toggle to activate either the upper or lower half decoder
 - If the upper decoder was enabled, four 0's were concanted to the end, if the bottom was enabled, four 0's were concanted to the beginning
 - Learned to concantate two values. e.g. `{<a>,<b>}`
