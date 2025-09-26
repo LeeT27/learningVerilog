@@ -43,13 +43,13 @@ This project implements a 32-to-1 multiplexer using four 8-to-1 MUX modules, all
 **Key Features / Learning Outcomes**  
 - Programmed **8-to-1 MUX modules** that output the value of a selected bit from an 8-bit input using a **3-bit select line**
   - Combined 4 of these MUX modules, each handling a different byte of the 32-bit input ([31:24], [23:16], [15:8], [7:0]), to create the 32-to-1 multiplexer
-  - The value of the first three bits (`[2:0]`) determine which position to check a bit in each MUX
-  - The value of the last two bits (`[4:3]`) choose which MUX to return from using the ternary operater
+  - The value of the first three bits [2:0] determine which position to check a bit in each MUX
+  - The value of the last two bits [4:3] choose which MUX to return from using the ternary operater
 - Applied `always @(*)` blocks to ensure outputs automatically update when inputs change
 - Used a **`case` statement** so that every 3-bit selector combination corresponds to its correct bit from the 8-bit input
 - Learned how to use the **ternary operater `? :`** to select the appropriate multiplexor based on bits [4:3] of the main selection line
   - `<condition> ? <value_if_true> : <value_if_false>` (can be chained)
-- Learned how to express **multi-bit values** in binary (`b`), hexademical (`h`), or decimal (`d`) using the format,
+- Learned how to express **multi-bit values** in binary `b`, hexademical `h`, or decimal `d` using the format,
   - `<# of bits>'<base><value>` (e.g., `8'h1F`)
 
 ## [Project 4: 8-Bit 2x2-4 Decoder](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%202x2-to-4%20Decoder) (9/26/25)
@@ -60,7 +60,7 @@ This project implements an 8-bit 3-to-8 decoder that uses two 2-to-4 decoder mod
 
 **Key Features / Learning Outcomes**  
 - Built two 2-to-4 decoder modules, each producing a 4-bit output based on a 2-bit input
-  - The 8-bit output returns 0's in all digits except for a 1 positioned at bit #`<decimal_input_value>`
+  - The 8-bit output returns 0's in all digits except for a 1 positioned at bit `#<decimal_input_value>`
 - Used the top bit as a toggle to activate either the upper or lower half decoder
 - If the upper decoder was enabled, four 0's were concanted to the end, if the bottom was enabled, four 0's were concanted to the beginning
 - Learned to concantate two values. e.g. `{<a>,<b>}`
