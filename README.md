@@ -20,7 +20,7 @@ My first Verilog project focused on designing and combining basic logic gates to
 - Learned to simulate Verilog code using **Iverilog** and visualize waveforms with **GTKWave**.
 - Generated and analyzed waveform files (`.vcd`) to confirm truth table outputs
 
-## [Project 2: 8-Bit RCA](https://github.com/LeeT27/learningVerilog/tree/main/AND-OR%20Logic%20Circuit) (9/23/25)
+## [Project 2: 8-Bit RCA](https://github.com/LeeT27/learningVerilog/tree/main/8-bit%20Ripple%20Carry%20Adder%20(RCA)) (9/23/25)
 This project takes two 8-bit inputs and outputs the sum without overflow
 
 <img width="1704" height="727" alt="image" src="https://github.com/user-attachments/assets/9c631ae6-4a83-44f6-a4d7-43474585b34a" />
