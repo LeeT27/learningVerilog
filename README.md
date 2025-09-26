@@ -25,7 +25,7 @@ This project implements an 8-bit ripple carry adder that computes the sum of two
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/9c631ae6-4a83-44f6-a4d7-43474585b34a" />
 
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/b58d7a90-7d27-4579-b13e-e0d6efc7436b" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/1fe4ecfe-c4d0-4976-8105-e50a13545cd9" />
 
 **Key Features / Learning Outcomes**  
 - Implemented **full adder modules** using XOR, AND, and OR gates, and learned the theory behind bitwise addition
