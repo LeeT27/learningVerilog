@@ -20,7 +20,7 @@ My first Verilog project focused on designing and combining basic logic gates to
 - Generated and analyzed waveform files (`.vcd`) using the terminal to confirm truth table outputs
 
 ## [Project 2: 8-Bit Ripple Carry Adder](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%20Ripple%20Carry%20Adder%20(RCA)) (9/25/25)
-This project implements an 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning a 9-bit output (including carry-out).
+A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning a 9-bit output (including carry-out).
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/9c631ae6-4a83-44f6-a4d7-43474585b34a" />\n
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/1fe4ecfe-c4d0-4976-8105-e50a13545cd9" />
@@ -35,7 +35,7 @@ This project implements an 8-bit ripple carry adder that computes the sum of two
 - Learned Verilog **loop** syntax and the `generate` keyword to create multiple instances of `full_adder`
 
 ## [Project 3: 32-Bit 4x8-to-1 Multiplexer (MUX)](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%204x8-to-1%20Multiplexer%20(MUX)) (9/26/25)
-This project implements a 32-to-1 multiplexer using four 8-to-1 MUX modules, allowing selection of a single bit from a 32-bit input using a 5-bit select line.
+A 32-to-1 multiplexer using four 8-to-1 MUX modules that allows for selection of a single bit from a 32-bit input using a 5-bit select line.
 
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/dca9d829-8ace-4a93-bd96-32c121631744" />\n
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/a9a18982-028b-4e24-863b-b243a12701c5" />
@@ -53,7 +53,7 @@ This project implements a 32-to-1 multiplexer using four 8-to-1 MUX modules, all
   - `<# of bits>'<base><value>` (e.g., `8'h1F`)
 
 ## [Project 4: 8-Bit 2x2-4 Decoder](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%202x2-to-4%20Decoder) (9/26/25)
-This project implements an 8-bit 3-to-8 decoder that uses two 2-to-4 decoder modules
+An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/ee7c2d30-7a93-48cf-87fa-a02399f1214e" />\n
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/ce47c8a0-38c5-4af5-a370-1f9959cc8c15" />
