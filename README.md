@@ -43,4 +43,5 @@ CPU components
 Mini CPU  
 RAM  
 VGA game  
+FPGA Implementation
 Final project
