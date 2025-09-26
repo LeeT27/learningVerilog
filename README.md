@@ -23,9 +23,9 @@ My first Verilog project focused on designing and combining basic logic gates to
 ## [Project 2: 8-Bit Ripple Carry Adder](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%20Ripple%20Carry%20Adder%20(RCA)) (9/25/25)
 This project implements an 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning a 9-bit output (including carry-out).
 
-<img width="1704" height="727" alt="image" src="https://github.com/user-attachments/assets/9c631ae6-4a83-44f6-a4d7-43474585b34a" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/9c631ae6-4a83-44f6-a4d7-43474585b34a" />
 
-<img width="1989" height="1249" alt="image" src="https://github.com/user-attachments/assets/b58d7a90-7d27-4579-b13e-e0d6efc7436b" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/b58d7a90-7d27-4579-b13e-e0d6efc7436b" />
 
 **Key Features / Learning Outcomes**  
 - Implemented **full adder modules** using XOR, AND, and OR gates, and learned the theory behind bitwise addition
@@ -37,9 +37,9 @@ This project implements an 8-bit ripple carry adder that computes the sum of two
 ## [Project 3: 32-Bit 4x8-to-1 Multiplexer (MUX)](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%204x8-to-1%20Multiplexer%20(MUX)) (9/26/25)
 This project implements a 32-to-1 multiplexer using four 8-to-1 MUX modules, allowing selection of a single bit from a 32-bit input using a 5-bit select line.
 
-<img width="542" height="561" alt="image" src="https://github.com/user-attachments/assets/dca9d829-8ace-4a93-bd96-32c121631744" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/dca9d829-8ace-4a93-bd96-32c121631744" />
 
-<img width="1879" height="562" alt="image" src="https://github.com/user-attachments/assets/a9a18982-028b-4e24-863b-b243a12701c5" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/a9a18982-028b-4e24-863b-b243a12701c5" />
 
 **Key Features / Learning Outcomes**  
 - Programmed **8-to-1 MUX modules** that output the value of a selected bit from an 8-bit input using a **3-bit select line**
