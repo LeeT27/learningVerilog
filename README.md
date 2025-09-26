@@ -29,6 +29,7 @@ A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning 
 - Made **full adder modules** using **XOR**, **AND**, and **OR** gates, and learned the theory behind ripple addition
   - If odd # of inputs are 1, the sum bit returns 1
   - If at least two inputs are 1, a 1 is carried out for the next digit
+  - Extra wire to hold carry bit data
 - Accommodated an **extra bit in the top module output** to handle carry-out and prevent overflow
 - Learned to testbench results to the terminal using `$display`
 - Learned to initialize **multi-bit inputs, outputs, wires, and registers** e.g. `input[7:0] a;`
