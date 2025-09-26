@@ -42,13 +42,12 @@ This project implements a 32-to-1 multiplexer using four 8-to-1 MUX modules, all
 <img width="1879" height="562" alt="image" src="https://github.com/user-attachments/assets/a9a18982-028b-4e24-863b-b243a12701c5" />
 
 **Key Features / Learning Outcomes**  
-- Implemented **full adder modules** using XOR, AND, and OR gates, and learned the theory behind bitwise addition
-- Displayed testbench results to the terminal using `$display`
-- Learned to initialize **multi-bit inputs, outputs, and wires**
-- Learned Verilog **loops** and the `generate` keyword to create multiple instances of `full_adder` at once
-- Accommodated an **extra bit in the top module output** to handle carry-out and prevent overflow
+- Programmed **8-to-1 MUX modules** that output the value of a selected bit from an 8-bit input using a **3-bit select line**
+- Applied `always @(*)` blocks to ensure outputs automatically update when inputs change
+- Used a **`case` statement** so that every 3-bit selector combination corresponds to its correct bit from the 8-bit input
+- Combined 4 of these MUX modules, each handling a different byte of the 32-bit input ([31:24], [23:16], [15:8], [7:0]), to create the 32-to-1 multiplexer.
+- Learned how to use the **ternary operater `? :`** to select the appropriate multiplexor based on bits [5:4] of the main selection line
 
-- 
 To do:  
 Decoder
 ALU  
