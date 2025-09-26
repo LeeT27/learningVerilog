@@ -49,8 +49,7 @@ This project implements a 32-to-1 multiplexer using four 8-to-1 MUX modules, all
 - Accommodated an **extra bit in the top module output** to handle carry-out and prevent overflow
 
 - 
-To do:
-Multiplexer  
+To do:  
 Decoder
 ALU  
 CPU components  
