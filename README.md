@@ -42,11 +42,15 @@ This project implements a 32-to-1 multiplexer using four 8-to-1 MUX modules, all
 
 **Key Features / Learning Outcomes**  
 - Programmed **8-to-1 MUX modules** that output the value of a selected bit from an 8-bit input using a **3-bit select line**
+  - Combined 4 of these MUX modules, each handling a different byte of the 32-bit input ([31:24], [23:16], [15:8], [7:0]), to create the 32-to-1 multiplexer
+  - The value of the first three bits determine which position to check a bit in each MUX
+  - The value of the last two bits choose which MUX to return from using the ternary operater
 - Applied `always @(*)` blocks to ensure outputs automatically update when inputs change
 - Used a **`case` statement** so that every 3-bit selector combination corresponds to its correct bit from the 8-bit input
-- Combined 4 of these MUX modules, each handling a different byte of the 32-bit input ([31:24], [23:16], [15:8], [7:0]), to create the 32-to-1 multiplexer
 - Learned how to use the **ternary operater `? :`** to select the appropriate multiplexor based on bits [5:4] of the main selection line
-- Learned how to express **multi-bit values** in binary (`b`), hexademical (`h`), or decimal (`d`) using the format, `<# of bits>'<base><value>` (e.g., `8'h1F`)
+  - `<condition> ? <value_if_true> : <value_if_false>`
+- Learned how to express **multi-bit values** in binary (`b`), hexademical (`h`), or decimal (`d`) using the format,
+  - `<# of bits>'<base><value>` (e.g., `8'h1F`)
 
 ## [Project 4: 8-Bit 2x2-4 Decoder](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%202x2-to-4%20Decoder) (9/26/25)
 This project implements an 8-bit 3-to-8 decoder that uses two 2-to-4 decoder modules. The first two bits determine the possible output of the upper or lower 4 bits, using one or the other decoder. The last bit, EN, toggles whether the upper or lower decoder is used
