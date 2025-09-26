@@ -59,12 +59,12 @@ An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/ce47c8a0-38c5-4af5-a370-1f9959cc8c15" />
 
 **Key Features / Learning Outcomes**  
-- Made and combined two 2-to-4 decoder modules, each producing a 4-bit output based on a 2-bit input
+- Made and combined **two 2-to-4 decoder modules**, each producing a 4-bit output based on a 2-bit input
   - The 8-bit output returns `0` in most digits, with a `1` at the position corresponding to the decimal value of the input
   - The first two input bits determine whether the output appears in the upper or lower 4 bits, using one decoder or the other
   - The last input bit, `in[2]`, toggles `EN`, which decides whether the upper or lower decoder is active
   - If the upper decoder is enabled, four 0's are concatenated to the end; if the lower decoder is enabled, four 0's are concatenated to the beginning
-- Learned to concatenate values in Verilog using `{<a>,<b>}`
+- Learned to **concatenate** values in Verilog using `{<a>,<b>}`
 - Learned to select which decoder to activate with an enable toggle instead of a ternary operator leading to more organized code
 
 To do:  
