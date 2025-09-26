@@ -37,7 +37,7 @@ This project implements an 8-bit ripple carry adder that computes the sum of two
 
 To do:
 Multiplexer  
-Encoder  
+Decoder
 ALU  
 CPU components  
 Mini CPU  
