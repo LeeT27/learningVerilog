@@ -26,7 +26,7 @@ A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning 
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/1fe4ecfe-c4d0-4976-8105-e50a13545cd9" />
 
 **Key Features / Learning Outcomes**  
-- Implemented **full adder modules** using **XOR**, **AND**, and **OR** gates, and learned the theory behind ripple addition
+- Made **full adder modules** using **XOR**, **AND**, and **OR** gates, and learned the theory behind ripple addition
   - If odd # of inputs are 1, the sum bit returns 1
   - If at least two inputs are 1, a 1 is carried out for the next digit
 - Accommodated an **extra bit in the top module output** to handle carry-out and prevent overflow
@@ -41,7 +41,7 @@ A 32-to-1 multiplexer using four 8-to-1 MUX modules that allows for selection of
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/a9a18982-028b-4e24-863b-b243a12701c5" />
 
 **Key Features / Learning Outcomes**  
-- Programmed **8-to-1 MUX modules** that output the value of a selected bit from an 8-bit input using a **3-bit select line**
+- Made **8-to-1 MUX modules** that output the value of a selected bit from an 8-bit input using a **3-bit select line**
   - Combined 4 of these MUX modules, each handling a different byte of the 32-bit input ([31:24], [23:16], [15:8], [7:0]), to create the 32-to-1 multiplexer
   - The value of the first three bits [2:0] determine which position to check a bit in each MUX
   - The value of the last two bits [4:3] choose which MUX to return from using the ternary operater
@@ -59,7 +59,7 @@ An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/ce47c8a0-38c5-4af5-a370-1f9959cc8c15" />
 
 **Key Features / Learning Outcomes**  
-- Made two 2-to-4 decoder modules, each producing a 4-bit output based on a 2-bit input
+- Made and combined two 2-to-4 decoder modules, each producing a 4-bit output based on a 2-bit input
   - The 8-bit output returns 0's in most digits, with a 1 at the position corresponding to the decimal value of the input
   - The first two input bits determine whether the output appears in the upper or lower 4 bits, using one decoder or the other
   - The last input bit, `in[2]`, toggles `EN`, which decides whether the upper or lower decoder is active
