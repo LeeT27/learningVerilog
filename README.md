@@ -8,7 +8,7 @@ Self-studying Verilog, my first HDL, through projects simulated with Icarus Veri
 ## [Project 1: AND-OR Logic Circuit](https://github.com/LeeT27/learningVerilog/tree/main/AND-OR%20Logic%20Circuit) (9/23/25)
 My first Verilog project focused on designing and combining basic logic gates to simulate **(A AND B) OR C** in a waveform for output **y**
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/1c89cbc7-266d-41fd-9b62-3cc2edba1358" />\n
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/1c89cbc7-266d-41fd-9b62-3cc2edba1358" />  
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/6e2d9100-16e8-4d67-875c-3d3085666311" />
 
 **Key Features / Learning Outcomes**  
@@ -22,7 +22,7 @@ My first Verilog project focused on designing and combining basic logic gates to
 ## [Project 2: 8-Bit RCA](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%20RCA) (9/25/25)
 A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning a 9-bit output (including carry-out).
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/9c631ae6-4a83-44f6-a4d7-43474585b34a" />\n
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/9c631ae6-4a83-44f6-a4d7-43474585b34a" />  
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/1fe4ecfe-c4d0-4976-8105-e50a13545cd9" />
 
 **Key Features / Learning Outcomes**  
@@ -38,7 +38,7 @@ A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning 
 ## [Project 3: 32-Bit 4x8-to-1 MUX](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%204x8-to-1%20MUX) (9/26/25)
 A 32-to-1 multiplexer using four 8-to-1 MUX modules that allows for selection of a single bit from a 32-bit input using a 5-bit select line.
 
-<img width="200" alt="image" src="https://github.com/user-attachments/assets/dca9d829-8ace-4a93-bd96-32c121631744" />\n
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/dca9d829-8ace-4a93-bd96-32c121631744" />  
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/a9a18982-028b-4e24-863b-b243a12701c5" />
 
 **Key Features / Learning Outcomes**  
@@ -56,7 +56,7 @@ A 32-to-1 multiplexer using four 8-to-1 MUX modules that allows for selection of
 ## [Project 4: 8-Bit 2x2-to-4 Decoder](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%202x2-to-4%20Decoder) (9/26/25)
 An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/ee7c2d30-7a93-48cf-87fa-a02399f1214e" />\n
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/ee7c2d30-7a93-48cf-87fa-a02399f1214e" />  
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/ce47c8a0-38c5-4af5-a370-1f9959cc8c15" />
 
 **Key Features / Learning Outcomes**  
@@ -71,7 +71,7 @@ An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
 ## [Project 5: 32-Bit ALU](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%20ALU) (9/28/25)
 An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/bd50d2c2-0d0a-48e0-9879-4a08a4ba05aa" />\n
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/bd50d2c2-0d0a-48e0-9879-4a08a4ba05aa" />  
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/e68fabcf-96b8-4443-8f17-9b5d3dd0cfef" />
 
 **Key Features / Learning Outcomes**  
