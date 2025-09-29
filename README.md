@@ -93,17 +93,18 @@ A **32×32** register file module that stores **32 registers of 32 bits each**, 
 **Key Features / Learning Outcomes**  
 - **32 registers** x **32 bits**: Storage for CPU computation
 - **Two read ports**: Read two registers simultaneously with combinational logic
-- **One write port**: Writes on a register every rising clock edge
-- 5-bit selectors choose register addresses for reading and writing
-- Toggle switch `reg_write` to control when to write
+- **One write port**: Writes on a register every rising clock edge (`posedge clk`)
+- **5-bit selectors** to select register addresses for reading and writing
+- **Toggle `reg_write`** to control when to write
 - Learned sequential vs combinational logic
-  - Combinational logic is better suited for current inputs while sequential uses both current inputs and past states after assignment
-  - `always @(posedge clk)` to run inner code every rising clock edge
-  - Non-blocking assignment `<=`, so that assignments happen in order of lines instead of the same time, preventing unintended incorreect assignments
-- Prevented overwriting of register `0`
+  - Combinational responds to inputs immediately
+  - Sequential uses current inputs and past states to determine outputs, storing informtion across clock cycles
+  - Used `always @(posedge clk)` to run inner code every rising clock edge
+  - Non-blocking assignment (`<=`) so that the inner code occurs in order of the lines, preventing unintended incorreect assignments
+- Prevented writing in register `0`
 - Gained an understanding of the register's role for a CPU
   - Store temporary values for computations
-  - ALU reads registers, performs operations, and writes back on register or RAM
+  - ALU reads registers, performs calculations, and writes back on register or RAM
 
 
 
