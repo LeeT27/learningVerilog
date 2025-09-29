@@ -71,8 +71,8 @@ An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
 ## [Project 5: 32-Bit ALU](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%20ALU) (9/28/25)
 An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
 
-<img width="400" height="173" alt="image" src="https://github.com/user-attachments/assets/bd50d2c2-0d0a-48e0-9879-4a08a4ba05aa" />\n
-<img width="600" height="395" alt="image" src="https://github.com/user-attachments/assets/e68fabcf-96b8-4443-8f17-9b5d3dd0cfef" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/bd50d2c2-0d0a-48e0-9879-4a08a4ba05aa" />\n
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/e68fabcf-96b8-4443-8f17-9b5d3dd0cfef" />
 
 **Key Features / Learning Outcomes**  
 - Made and combined **two 2-to-4 decoder modules**, each producing a 4-bit output based on a 2-bit input
