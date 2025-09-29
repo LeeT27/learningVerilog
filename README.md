@@ -76,9 +76,13 @@ A 32-bit Arithmetic Logic Unit (ALU) capable of performing core arithmetic and b
 
 **Key Features / Learning Outcomes**  
 - Made a **32-bit ALU module** that performs operations on two 32-bit operands based on a 3-bit operator input
-  - Supports addition `000`, subtraction `001`, bitwise AND `010`, bitwise OR `011`, bitwise XOR `100`, set on less than `101`, left shift logical `110`, right shift logical `111`
-  - Implemented a `zero` flag returns 1 if the result is 0
-
+  - Supports addition (`000`), subtraction (`001`), bitwise AND (`010`), bitwise OR (`011`), bitwise XOR (`100`), set on less than (`101`), left shift logical (`110`), right shift logical (`111`)
+  - Implemented a **zero flag** that outputs `1` if the ALU result is zero
+- Learned to use **local parameters** to store and name bit values for organization
+- Learned to cast an unsigned integer into a signed integer used the function `$signed(<value>)`
+- Gained an understanding of the ALU's role for a CPU
+  - Performs operations using register values or inputs
+  - Returns results back to registers or memory based off the CPU instructions
 
 
 To do:  
