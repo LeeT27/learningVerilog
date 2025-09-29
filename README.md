@@ -8,7 +8,7 @@ Self-studying Verilog, my first HDL, through projects simulated with Icarus Veri
 ## [Project 1: AND-OR Logic Circuit](https://github.com/LeeT27/learningVerilog/tree/main/AND-OR%20Logic%20Circuit)
 My first Verilog project where simulated **(A AND B) OR C** in a waveform using basic logic gates
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/1c89cbc7-266d-41fd-9b62-3cc2edba1358" />/n
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/1c89cbc7-266d-41fd-9b62-3cc2edba1358" /><br>
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/6e2d9100-16e8-4d67-875c-3d3085666311" />
 
 **Features and Notes**  
@@ -19,10 +19,10 @@ My first Verilog project where simulated **(A AND B) OR C** in a waveform using 
 - Learned to simulate my code using **Icarus Verilog** and analyse waveforms with **GTKWave**
 - Generated and analyzed waveform files (`.vcd`) using the terminal to confirm truth table outputs
 
-## [Project 2: 8-Bit RCA](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%20RCA) (9/25/25)
+## [Project 2: 8-Bit RCA](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%20RCA)
 A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning a 9-bit output (overflow)
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/9c631ae6-4a83-44f6-a4d7-43474585b34a" />/n
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/9c631ae6-4a83-44f6-a4d7-43474585b34a" /><br>
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/1fe4ecfe-c4d0-4976-8105-e50a13545cd9" />
 
 **Features and Notes**  
@@ -38,7 +38,7 @@ A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning 
 ## [Project 3: 32-Bit 4x8-to-1 MUX](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%204x8-to-1%20MUX)
 A 32-to-1 MUX made up of four smaller 8-to-1 MUX modules with a selection input of 5 bits
 
-<img width="200" alt="image" src="https://github.com/user-attachments/assets/dca9d829-8ace-4a93-bd96-32c121631744" />/n
+<img width="200" alt="image" src="https://github.com/user-attachments/assets/dca9d829-8ace-4a93-bd96-32c121631744" /><br>
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/a9a18982-028b-4e24-863b-b243a12701c5" />
 
 **Features and Notes**  
@@ -54,7 +54,7 @@ A 32-to-1 MUX made up of four smaller 8-to-1 MUX modules with a selection input 
 ## [Project 4: 8-Bit 2x2-to-4 Decoder](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%202x2-to-4%20Decoder)
 An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/ee7c2d30-7a93-48cf-87fa-a02399f1214e" />/n
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/ee7c2d30-7a93-48cf-87fa-a02399f1214e" /><br>
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/ce47c8a0-38c5-4af5-a370-1f9959cc8c15" />
 
 **Features and Notes**  
@@ -69,7 +69,7 @@ An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
 ## [Project 5: 32-Bit ALU](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%20ALU)
 A 32-bit ALU that calculates arithmetic and bitwise operations with a zero indicator
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/bd50d2c2-0d0a-48e0-9879-4a08a4ba05aa" />/n
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/bd50d2c2-0d0a-48e0-9879-4a08a4ba05aa" /><br>
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/e68fabcf-96b8-4443-8f17-9b5d3dd0cfef" />
 
 **Features and Notes**  
@@ -86,7 +86,7 @@ A 32-bit ALU that calculates arithmetic and bitwise operations with a zero indic
 ## [Project 6: 32x32 Register File]()
 A **32×32** register file that allows for **two reads** and a **write**
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/bd50d2c2-0d0a-48e0-9879-4a08a4ba05aa" />/n
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/bd50d2c2-0d0a-48e0-9879-4a08a4ba05aa" /><br>
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/e68fabcf-96b8-4443-8f17-9b5d3dd0cfef" />
 
 **Features and Notes**  
@@ -99,7 +99,7 @@ A **32×32** register file that allows for **two reads** and a **write**
   - Combinational: Output always depends on current inputs - any change in the input is immediately reflected in the output
   - Sequential: Output depends on past states and every clock edge takes the current input
   - Used `always @(posedge clk)` to run inner code every rising clock edge
-  - Non-blocking assignment (`<=`) so that the inner code occurs in order of the lines, preventing unintended incorreect assignments
+  - Non-blocking assignment (`<=`) so that the inner code occurs in order of the lines, preventing unintended incorrect assignments
 - Prevented writing in register `0`
 - Gained an understanding of the register's role for a CPU
   - Store temporary values for computations
