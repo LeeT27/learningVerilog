@@ -75,10 +75,9 @@ A 32-bit Arithmetic Logic Unit (ALU) capable of performing core arithmetic and b
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/e68fabcf-96b8-4443-8f17-9b5d3dd0cfef" />
 
 **Key Features / Learning Outcomes**  
-- Made a **32-bit ALU module** with combinational logic to handle multiple operations depending on the operator value
-  - Supports addition `000`, subtraction `001`, bitwise AND `010`, bitwise OR `011`, bitwise XOR `100`, less than comparison `101`, left shift `110`, right shift `111`
-  - Inputs: 32 bit operands `a` and `b`, 3 bit operator changer `op`
-  - Outputs result and returns 1 for the wire `zero` if the result equals 0
+- Made a **32-bit ALU module** that performs operations on two 32-bit operands based on a 3-bit operator input
+  - Supports addition `000`, subtraction `001`, bitwise AND `010`, bitwise OR `011`, bitwise XOR `100`, set on less than `101`, left shift logical `110`, right shift logical `111`
+  - `zero` flag returns 1 if the result is 0
 
 
 
