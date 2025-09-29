@@ -20,7 +20,7 @@ My first Verilog project focused on designing and combining basic logic gates to
 - Generated and analyzed waveform files (`.vcd`) using the terminal to confirm truth table outputs
 
 ## [Project 2: 8-Bit RCA](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%20RCA) (9/25/25)
-A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning a 9-bit output (including carry-out).
+A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning a 9-bit output (including carry-out)
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/9c631ae6-4a83-44f6-a4d7-43474585b34a" />/n
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/1fe4ecfe-c4d0-4976-8105-e50a13545cd9" />
@@ -36,7 +36,7 @@ A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning 
 - Learned Verilog **loop** syntax and the `generate` keyword to create multiple instances of `full_adder`
 
 ## [Project 3: 32-Bit 4x8-to-1 MUX](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%204x8-to-1%20MUX) (9/26/25)
-A 32-to-1 multiplexer using four 8-to-1 MUX modules that allows for selection of a single bit from a 32-bit input using a 5-bit select line.
+A 32-to-1 multiplexer using four 8-to-1 MUX modules that allows for selection of a single bit from a 32-bit input using a 5-bit select line
 
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/dca9d829-8ace-4a93-bd96-32c121631744" />/n
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/a9a18982-028b-4e24-863b-b243a12701c5" />
@@ -84,9 +84,30 @@ A 32-bit Arithmetic Logic Unit (ALU) capable of performing core arithmetic and b
   - Performs operations using register values or inputs
   - Returns results back to registers or memory based off the CPU instructions
 
+## [Project 6: 32x32 Register File]() (9/29/25)
+A **32×32** register file module that stores 32 registers, each 32 bits wide, allowing two reads and a write per clock cycle
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/bd50d2c2-0d0a-48e0-9879-4a08a4ba05aa" />/n
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/e68fabcf-96b8-4443-8f17-9b5d3dd0cfef" />
+
+**Key Features / Learning Outcomes**  
+- Stores **32 registers**, each **32 bits wide**
+- **Two read ports**: Reads the data of two selected registers instantly with combinational logic
+- **One write port**: Writes data on one selected register everytime the clock alternates from 0 to 1
+- 5-bit selectors to choose register addresses for reading and writing
+- Implemented a toggle switch for when writing should occur `reg_write`
+- Learned how to use `always @(posedge clk)` for sequential logic
+  - Learned how use to non-blocking assignment `<=`, so that assignments happen on the rising clock edge instead of instant
+  - Gained the understanding that combinational logic is better suited for current inputs while sequential uses both current inputs and past states after assignment
+- Prevented overwriting register `0`
+- Gained an understanding of the register's role for a CPU
+  - Acts as the core storage unit for the CPU
+  - Temporary and quick values
+  - ALU reads the values, performs an operation, and overwrites a register or RAM
+
+
 
 To do:  
-Register
 RAM
 Single clock CPU    
 VGA game  
