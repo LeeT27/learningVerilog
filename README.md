@@ -19,7 +19,7 @@ My first Verilog project focused on designing and combining basic logic gates to
 - Learned to simulate Verilog code using **Icarus Verilog** and visualize waveforms with **GTKWave**
 - Generated and analyzed waveform files (`.vcd`) using the terminal to confirm truth table outputs
 
-## [Project 2: 8-Bit Ripple Carry Adder](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%20Ripple%20Carry%20Adder%20(RCA)) (9/25/25)
+## [Project 2: 8-Bit RCA](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%20Ripple%20Carry%20Adder%20(RCA)) (9/25/25)
 A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning a 9-bit output (including carry-out).
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/9c631ae6-4a83-44f6-a4d7-43474585b34a" />\n
@@ -35,7 +35,7 @@ A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning 
 - Learned to initialize **multi-bit inputs, outputs, wires, and registers** e.g. `input[7:0] a;`
 - Learned Verilog **loop** syntax and the `generate` keyword to create multiple instances of `full_adder`
 
-## [Project 3: 32-Bit 4x8-to-1 Multiplexer (MUX)](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%204x8-to-1%20Multiplexer%20(MUX)) (9/26/25)
+## [Project 3: 32-Bit 4x8-to-1 MUX](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%204x8-to-1%20Multiplexer%20(MUX)) (9/26/25)
 A 32-to-1 multiplexer using four 8-to-1 MUX modules that allows for selection of a single bit from a 32-bit input using a 5-bit select line.
 
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/dca9d829-8ace-4a93-bd96-32c121631744" />\n
@@ -53,7 +53,7 @@ A 32-to-1 multiplexer using four 8-to-1 MUX modules that allows for selection of
 - Learned how to express **multi-bit values** in binary `b`, hexadecimal `h`, or decimal `d` using the format,
   - `<# of bits>'<base><value>` (e.g., `8'h1F`)
 
-## [Project 4: 8-Bit 2x2-4 Decoder](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%202x2-to-4%20Decoder) (9/26/25)
+## [Project 4: 8-Bit 2x2-to-4 Decoder](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%202x2-to-4%20Decoder) (9/26/25)
 An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/ee7c2d30-7a93-48cf-87fa-a02399f1214e" />\n
@@ -68,9 +68,19 @@ An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
 - Learned to **concatenate** values in Verilog using `{<a>,<b>}`
 - Learned to select which decoder to activate with an enable toggle instead of a ternary operator leading to more organized code
 
+## [Project 5: 32-Bit ALU](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%202x2-to-4%20Decoder) (9/28/25)
+An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/ee7c2d30-7a93-48cf-87fa-a02399f1214e" />\n
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/ce47c8a0-38c5-4af5-a370-1f9959cc8c15" />
+
+**Key Features / Learning Outcomes**  
+- Made and combined **two 2-to-4 decoder modules**, each producing a 4-bit output based on a 2-bit input
+  - The 8-bit output returns `0` in most digits, with a `1` at the position corresponding to the decimal value of the input
+
+<img width="1547" height="395" alt="image" src="https://github.com/user-attachments/assets/e68fabcf-96b8-4443-8f17-9b5d3dd0cfef" />
+
 To do:  
-ALU  
-Sequential?
 CPU components  
 Mini CPU  
 RAM  
