@@ -86,9 +86,9 @@ A 32-bit Arithmetic Logic Unit (ALU) capable of performing core arithmetic and b
 
 
 To do:  
-CPU components  
-Mini CPU  
-RAM  
+Register
+RAM
+Single clock CPU    
 VGA game  
 FPGA Implementation
 Final project
