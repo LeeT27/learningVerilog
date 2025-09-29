@@ -3,9 +3,9 @@ netID: (ethanjl5)
 UIN: 660582957  
 
 # learningVerilog
-Self-studying Verilog, my first HDL, through projects simulated with Icarus Verilog & GTKWave, extending beyond UIUC coursework (Began 9/22/25)
+Self-studying Verilog, my first HDL, through projects simulated with Icarus Verilog & GTKWave, extending beyond UIUC coursework
 
-## [Project 1: AND-OR Logic Circuit](https://github.com/LeeT27/learningVerilog/tree/main/AND-OR%20Logic%20Circuit) (9/23/25)
+## [Project 1: AND-OR Logic Circuit](https://github.com/LeeT27/learningVerilog/tree/main/AND-OR%20Logic%20Circuit)
 My first Verilog project focused on designing and combining basic logic gates to simulate **(A AND B) OR C** in a waveform for output **y**
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/1c89cbc7-266d-41fd-9b62-3cc2edba1358" />/n
@@ -35,7 +35,7 @@ A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning 
 - Learned to initialize **multi-bit inputs, outputs, wires, and registers** e.g. `input[7:0] a;`
 - Learned Verilog **loop** syntax and the `generate` keyword to create multiple instances of `full_adder`
 
-## [Project 3: 32-Bit 4x8-to-1 MUX](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%204x8-to-1%20MUX) (9/26/25)
+## [Project 3: 32-Bit 4x8-to-1 MUX](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%204x8-to-1%20MUX)
 A 32-to-1 multiplexer using four 8-to-1 MUX modules that allows for selection of a single bit from a 32-bit input using a 5-bit select line
 
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/dca9d829-8ace-4a93-bd96-32c121631744" />/n
@@ -53,7 +53,7 @@ A 32-to-1 multiplexer using four 8-to-1 MUX modules that allows for selection of
 - Learned how to express **multi-bit values** in binary `b`, hexadecimal `h`, or decimal `d` using the format,
   - `<# of bits>'<base><value>` (e.g., `8'h1F`)
 
-## [Project 4: 8-Bit 2x2-to-4 Decoder](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%202x2-to-4%20Decoder) (9/26/25)
+## [Project 4: 8-Bit 2x2-to-4 Decoder](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%202x2-to-4%20Decoder)
 An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/ee7c2d30-7a93-48cf-87fa-a02399f1214e" />/n
@@ -68,7 +68,7 @@ An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
 - Learned to **concatenate** values in Verilog using `{<a>,<b>}`
 - Learned to select which decoder to activate with an enable toggle instead of a ternary operator leading to **more organized** code
 
-## [Project 5: 32-Bit ALU](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%20ALU) (9/28/25)
+## [Project 5: 32-Bit ALU](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%20ALU)
 A 32-bit Arithmetic Logic Unit (ALU) capable of performing core arithmetic and bitwise operations with a zero flag
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/bd50d2c2-0d0a-48e0-9879-4a08a4ba05aa" />/n
@@ -84,7 +84,7 @@ A 32-bit Arithmetic Logic Unit (ALU) capable of performing core arithmetic and b
   - Performs operations using register values or inputs
   - Returns results back to registers or memory based off the CPU instructions
 
-## [Project 6: 32x32 Register File]() (9/29/25)
+## [Project 6: 32x32 Register File]()
 A **32×32** register file module that stores **32 registers of 32 bits each**, allowing for **two simultaneous reads** and **one write per clock cycle**
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/bd50d2c2-0d0a-48e0-9879-4a08a4ba05aa" />/n
