@@ -33,7 +33,7 @@ A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning 
 - Accommodated an **extra bit in the top module output** to handle carry-out and prevent overflow
 - Learned to testbench results to the terminal using `$display`
 - Learned to initialize **multi-bit inputs, outputs, wires, and registers** e.g. `input[7:0] a;`
-- Learned Verilog loops and the `generate` keyword to create multiple instances of `full_adder`
+- Learned loop syntax and the `generate` keyword to create multiple instances of `full_adder`
 
 ## [Project 3: 32-Bit 4x8-to-1 MUX](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%204x8-to-1%20MUX)
 A 32-to-1 MUX made of four 8-to-1 MUX modules that returns the value of a selected bit from a 32-bit input using a 5-bit select line
