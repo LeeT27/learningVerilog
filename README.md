@@ -20,7 +20,7 @@ My first Verilog project where simulated **(A AND B) OR C** in a waveform using 
 - Generated and analyzed waveform files (`.vcd`) using the terminal to confirm truth table outputs
 
 ## [Project 2: 8-Bit RCA](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%20RCA) (9/25/25)
-A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning a 9-bit output (including carry-out)
+A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning a 9-bit output (overflow)
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/9c631ae6-4a83-44f6-a4d7-43474585b34a" />/n
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/1fe4ecfe-c4d0-4976-8105-e50a13545cd9" />
@@ -33,23 +33,22 @@ A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning 
 - Accommodated an **extra bit in the top module output** to handle carry-out and prevent overflow
 - Learned to testbench results to the terminal using `$display`
 - Learned to initialize **multi-bit inputs, outputs, wires, and registers** e.g. `input[7:0] a;`
-- Learned loop syntax and the `generate` keyword to create multiple instances of `full_adder`
+- Learned to create loops and multiple instances of modules with keyword `generate`
 
 ## [Project 3: 32-Bit 4x8-to-1 MUX](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%204x8-to-1%20MUX)
-A 32-to-1 MUX made of four 8-to-1 MUX modules that returns the value of a selected bit from a 32-bit input using a 5-bit select line
+A 32-to-1 MUX made up of four smaller 8-to-1 MUX modules with a selection input of 5 bits
 
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/dca9d829-8ace-4a93-bd96-32c121631744" />/n
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/a9a18982-028b-4e24-863b-b243a12701c5" />
 
 **Features and Notes**  
 - Made **8-to-1 MUX modules** that each navigate and output one of the **8 bits** using **3 bits**
-  - Combined 4 of these MUX modules, each handling a different byte of the 32-bit input ([31:24], [23:16], [15:8], [7:0]), to create the 32-to-1 multiplexer
+  - Combined 4 MUX modules that each handle a different byte of the 32-bit input ([31:24], [23:16], [15:8], [7:0])
   - The value of the first three bits [2:0] determine which position to check a bit in each MUX
   - The value of the last two bits [4:3] choose which MUX to return from using the ternary operator
-- Learned to use `always @(*)` blocks to ensure outputs automatically update when inputs change
-- Learned to use a **`case` statement** so that each 3-bit combination corresponds to a different bit from the 8-bit input
-- Learned to use the **ternary operator `? :`** to select one of the four multiplexor based on bits [4:3]
-  - `<condition> ? <value_if_true> : <value_if_false>` (can be chained)
+- Learned to use `always @(*)` blocks to ensure outputs are linked to every input change
+- Learned to use a **`case` statement** to select which bit of the 8-bit input should be returned corresponding to every 3-bit combination
+- Learned to chain **ternary operators `? :`** to select the correct multiplexor based on the last two bits
 - Learned to express **multi-bit values**: `<# of bits>'<base><value>` (e.g., `8'h1F`)
 
 ## [Project 4: 8-Bit 2x2-to-4 Decoder](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%202x2-to-4%20Decoder)
@@ -60,23 +59,24 @@ An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
 
 **Features and Notes**  
 - Made and combined **two 2-to-4 decoder modules**, each producing a 4-bit output based on a 2-bit input
-  - The 8-bit output returns `0` in most digits, with a `1` at the position corresponding to the decimal value of the input
-  - The first two input bits determine whether the output appears in the upper or lower 4 bits, using one decoder or the other
+  - The 8-bit output returns `0` in most digits, with a `1` at the position of the input value
+  - The first two input bits determine where the single `1` will be in the 4 bits
   - The last input bit, `in[2]`, toggles `EN`, which decides whether the upper or lower decoder is active
-  - If the upper decoder is enabled, four 0's are concatenated to the end; if the lower decoder is enabled, four 0's are concatenated to the beginning
-- Learned to **concatenate** values in Verilog using `{<a>,<b>}`
-- Learned to select which decoder to activate with an enable toggle instead of a ternary operator leading to **more organized** code
+  - If the upper decoder is enabled, four 0's are concatenated to the right; if the lower decoder is enabled, four 0's are concatenated to the left
+- Learned to **concatenate** values: `{<a>,<b>}`
+- Learned to toggle decoders instead of using a ternary operator -> **more organized** code
 
 ## [Project 5: 32-Bit ALU](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%20ALU)
-A 32-bit Arithmetic Logic Unit (ALU) capable of performing core arithmetic and bitwise operations with a zero flag
+A 32-bit ALU that calculates arithmetic and bitwise operations with a zero indicator
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/bd50d2c2-0d0a-48e0-9879-4a08a4ba05aa" />/n
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/e68fabcf-96b8-4443-8f17-9b5d3dd0cfef" />
 
 **Features and Notes**  
-- Made a **32-bit ALU module** that performs operations on two 32-bit operands based on a 3-bit operator input
-  - Supports addition (`000`), subtraction (`001`), bitwise AND (`010`), bitwise OR (`011`), bitwise XOR (`100`), set on less than (`101`), left shift logical (`110`), right shift logical (`111`)
-  - Implemented a **zero flag** that outputs `1` if the ALU result is zero
+- Performs operations with two 32-bit operands
+  - The operator is chosen by 3 bits
+    - Addition (`000`), subtraction (`001`), bitwise AND (`010`), bitwise OR (`011`), bitwise XOR (`100`), less than (`101`), left shift (`110`), right shift (`111`)
+  - **zero flag** returns `1` if the final result equals `0`
 - Learned to use **local parameters** to store and name bit values for organization
 - Learned to cast an unsigned integer into a signed integer using `$signed(<value>)`
 - Gained an understanding of the ALU's role for a CPU
@@ -84,7 +84,7 @@ A 32-bit Arithmetic Logic Unit (ALU) capable of performing core arithmetic and b
   - Returns results back to registers or memory based off the CPU instructions
 
 ## [Project 6: 32x32 Register File]()
-A **32×32** register file module that stores **32 registers of 32 bits each**, allowing for **two simultaneous reads** and **one write per clock cycle**
+A **32×32** register file that allows for **two reads** and a **write**
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/bd50d2c2-0d0a-48e0-9879-4a08a4ba05aa" />/n
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/e68fabcf-96b8-4443-8f17-9b5d3dd0cfef" />
@@ -96,8 +96,8 @@ A **32×32** register file module that stores **32 registers of 32 bits each**, 
 - **5-bit selectors** to select register addresses for reading and writing
 - **Toggle `reg_write`** to control when to write
 - Learned sequential vs combinational logic
-  - Combinational responds to inputs immediately
-  - Sequential uses current inputs and past states to determine outputs, storing informtion across clock cycles
+  - Combinational: Output always depends on current inputs - any change in the input is immediately reflected in the output
+  - Sequential: Output depends on past states and every clock edge takes the current input
   - Used `always @(posedge clk)` to run inner code every rising clock edge
   - Non-blocking assignment (`<=`) so that the inner code occurs in order of the lines, preventing unintended incorreect assignments
 - Prevented writing in register `0`
