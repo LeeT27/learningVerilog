@@ -3,7 +3,9 @@ netID: (ethanjl5)
 UIN: 660582957  
 
 # learningVerilog
-This repository documents my journey learning Verilog from the ground up, from combining basic gate modules to creating a full CPU. To simulate my work, I use Icarus Verilog, GTKWave, and occasionally the terminal to show testbench inputs and outputs. Rather than just memorizing Verilog syntax, I had a big focus on understanding the fundamentals of digital design. My projects are intended for people who already have Verilog knowledge with the goal to showcase my personal learning process rather than teaching the language.
+This repository documents my journey self studying Verilog from the ground up, from combining basic gate modules to creating a **full CPU**. To simulate my work, I used Icarus Verilog, GTKWave, and occasionally the terminal to show testbench inputs and outputs. Rather than just memorizing Verilog syntax, I had a big focus on understanding the fundamentals of digital design. My projects are intended for people who already have Verilog knowledge with the goal to showcase my personal learning process rather than teaching the language.
+
+As a UIUC freshman studying **Computer Engineering**, I wanted a head start with an **HDL** because careers in **semiconductor design** and **embedded systems**, fields I am really interested in, require a strong foundation in **hardware description languages** as they are essential for describing and simulating digital systems.
 
 ## [Project 1: AND-OR Logic Circuit](https://github.com/LeeT27/learningVerilog/tree/main/AND-OR%20Logic%20Circuit)
 My first Verilog project where simulated **(A AND B) OR C** in a waveform using basic logic gates
