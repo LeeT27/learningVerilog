@@ -86,7 +86,7 @@ A 32-bit ALU that calculates arithmetic and bitwise operations with a zero indic
 ## [Project 6: 32x32 Register File]()
 A **32×32** register file that allows for **two reads** and a **write**
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/2e513358-dc5b-4f5a-ac19-468d4fa572fb" /><br>
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/89af7beb-c9c6-4073-96bc-04f284e0fb7d" /><br>
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/e68fabcf-96b8-4443-8f17-9b5d3dd0cfef" />
 
 **Features and Notes**  
