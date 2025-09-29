@@ -46,8 +46,8 @@ A 32-to-1 multiplexer using four 8-to-1 MUX modules that allows for selection of
   - Combined 4 of these MUX modules, each handling a different byte of the 32-bit input ([31:24], [23:16], [15:8], [7:0]), to create the 32-to-1 multiplexer
   - The value of the first three bits [2:0] determine which position to check a bit in each MUX
   - The value of the last two bits [4:3] choose which MUX to return from using the ternary operator
-- Applied `always @(*)` blocks to ensure outputs automatically update when inputs change
-- Used a **`case` statement** so that every 3-bit selector combination corresponds to its correct bit from the 8-bit input
+- Learned to use `always @(*)` blocks to ensure outputs automatically update when inputs change
+- Learned to use a **`case` statement** so that every 3-bit selector combination corresponds to its correct bit from the 8-bit input
 - Learned how to use the **ternary operator `? :`** to select the appropriate multiplexor based on bits [4:3] of the main selection line
   - `<condition> ? <value_if_true> : <value_if_false>` (can be chained)
 - Learned how to express **multi-bit values** in binary `b`, hexadecimal `h`, or decimal `d` using the format,
@@ -66,7 +66,7 @@ An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
   - The last input bit, `in[2]`, toggles `EN`, which decides whether the upper or lower decoder is active
   - If the upper decoder is enabled, four 0's are concatenated to the end; if the lower decoder is enabled, four 0's are concatenated to the beginning
 - Learned to **concatenate** values in Verilog using `{<a>,<b>}`
-- Learned to select which decoder to activate with an enable toggle instead of a ternary operator leading to more organized code
+- Learned to select which decoder to activate with an enable toggle instead of a ternary operator leading to **more organized** code
 
 ## [Project 5: 32-Bit ALU](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%20ALU) (9/28/25)
 A 32-bit Arithmetic Logic Unit (ALU) capable of performing core arithmetic and bitwise operations with a zero flag
@@ -85,25 +85,25 @@ A 32-bit Arithmetic Logic Unit (ALU) capable of performing core arithmetic and b
   - Returns results back to registers or memory based off the CPU instructions
 
 ## [Project 6: 32x32 Register File]() (9/29/25)
-A **32×32** register file module that stores 32 registers, each 32 bits wide, allowing two reads and a write per clock cycle
+A **32×32** register file module that stores **32 registers of 32 bits each**, allowing for **two simultaneous reads** and **one write per clock cycle**
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/bd50d2c2-0d0a-48e0-9879-4a08a4ba05aa" />/n
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/e68fabcf-96b8-4443-8f17-9b5d3dd0cfef" />
 
 **Key Features / Learning Outcomes**  
-- Stores **32 registers**, each **32 bits wide**
-- **Two read ports**: Reads the data of two selected registers instantly with combinational logic
-- **One write port**: Writes data on one selected register everytime the clock alternates from 0 to 1
-- 5-bit selectors to choose register addresses for reading and writing
-- Implemented a toggle switch for when writing should occur `reg_write`
-- Learned how to use `always @(posedge clk)` for sequential logic
-  - Learned how use to non-blocking assignment `<=`, so that assignments happen on the rising clock edge instead of instant
-  - Gained the understanding that combinational logic is better suited for current inputs while sequential uses both current inputs and past states after assignment
-- Prevented overwriting register `0`
+- **32 registers** x **32 bits**: Storage for CPU computation
+- **Two read ports**: Read two registers simultaneously with combinational logic
+- **One write port**: Writes on a register every rising clock edge
+- 5-bit selectors choose register addresses for reading and writing
+- Toggle switch `reg_write` to control when to write
+- Learned sequential vs combinational logic
+  - Combinational logic is better suited for current inputs while sequential uses both current inputs and past states after assignment
+  - `always @(posedge clk)` to run inner code every rising clock edge
+  - Non-blocking assignment `<=`, so that assignments happen in order of lines instead of the same time, preventing unintended incorreect assignments
+- Prevented overwriting of register `0`
 - Gained an understanding of the register's role for a CPU
-  - Acts as the core storage unit for the CPU
-  - Temporary and quick values
-  - ALU reads the values, performs an operation, and overwrites a register or RAM
+  - Store temporary values for computations
+  - ALU reads registers, performs operations, and writes back on register or RAM
 
 
 
