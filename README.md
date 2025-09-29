@@ -69,14 +69,17 @@ An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
 - Learned to select which decoder to activate with an enable toggle instead of a ternary operator leading to more organized code
 
 ## [Project 5: 32-Bit ALU](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%20ALU) (9/28/25)
-An 8-bit 3-to-8 decoder that combines two 2-to-4 decoder modules
+A 32-bit Arithmetic Logic Unit (ALU) capable of performing core arithmetic and bitwise operations with a zero flag
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/bd50d2c2-0d0a-48e0-9879-4a08a4ba05aa" />/n
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/e68fabcf-96b8-4443-8f17-9b5d3dd0cfef" />
 
 **Key Features / Learning Outcomes**  
-- Made and combined **two 2-to-4 decoder modules**, each producing a 4-bit output based on a 2-bit input
-  - The 8-bit output returns `0` in most digits, with a `1` at the position corresponding to the decimal value of the input
+- Made a **32-bit ALU module** with combinational logic to handle multiple operations depending on the operator value
+  - Supports addition `000`, subtraction `001`, bitwise AND `010`, bitwise OR `011`, bitwise XOR `100`, less than comparison `101`, left shift `110`, right shift `111`
+  - Inputs: 32 bit operands `a` and `b`, 3 bit operator changer `op`
+  - Outputs result and returns 1 for the wire `zero` if the result equals 0
+
 
 
 To do:  
