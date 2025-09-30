@@ -86,7 +86,7 @@ A 32-bit ALU that calculates arithmetic and bitwise operations with a zero indic
   - Returns results back to registers or memory based off the CPU instructions
 
 ## [Project 6: 32x32 Register File](https://github.com/LeeT27/learningVerilog/tree/main/32x32%20Register%20File)
-A **32×32** register file that allows for **two reads** and a **write**
+A **32×32** register file that allows for **two reads** and **one write**
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/89af7beb-c9c6-4073-96bc-04f284e0fb7d" /><br>
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/dc1c8d38-310c-461a-8dfe-1524340297b3" />
@@ -95,7 +95,7 @@ A **32×32** register file that allows for **two reads** and a **write**
 - **32 registers** x **32 bits**: Storage for CPU computation
 - **Two read ports**: Read two registers simultaneously with combinational logic
 - **One write port**: Writes on a register every rising clock edge (`posedge clk`)
-- **5-bit selectors** to select register addresses for reading and writing
+- **5-bit selectors:** Selects register addresses for reading and writing
 - **Toggle `reg_write`** to control when to write
 - Learned sequential vs combinational logic
   - Combinational: Output always depends on current inputs - any change in the input is immediately reflected in the output
@@ -107,10 +107,27 @@ A **32×32** register file that allows for **two reads** and a **write**
   - Store temporary values for computations
   - ALU reads registers, performs calculations, and writes back on register or RAM
 
+## [Project 7: 128x32 RAM](https://github.com/LeeT27/learningVerilog/tree/main/32x32%20Register%20File)
+A **128×32** RAM module that allows for **one read** and **one write** per clock cycle
 
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/89af7beb-c9c6-4073-96bc-04f284e0fb7d" /><br>
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/dc1c8d38-310c-461a-8dfe-1524340297b3" />
+
+**Features and Notes**  
+- Similar to the register file, except:
+  - Reading is now sequential, therefore reads and writes both occur every rising clock edge
+  - One read output instead of two
+  - Read and write share the same address input
+  - Word `0` can be overwritten
+- **128 words** x **32 bits**: Storage for data
+- **One read port**: Reads value at selected word every rising clock edge (`posedge clk`)
+- **One write port**: Writes on a word every rising clock edge when `write_RAM = 1`
+- **7-bit selector**: Selects word address from 0-127
+- Gained an understanding of the RAM's role for a CPU
+  - Provides more storage than registers to hold long term data for programs and instructions
+  - Gives faster access for the CPU compared to slower storage such as SSD or hard drives
 
 To do:  
-RAM
 Single clock CPU    
 VGA game  
 FPGA Implementation
