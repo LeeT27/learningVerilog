@@ -89,7 +89,7 @@ A 32-bit ALU that calculates arithmetic and bitwise operations with a zero indic
 A **32×32** register file that allows for **two reads** and a **write**
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/89af7beb-c9c6-4073-96bc-04f284e0fb7d" /><br>
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/e68fabcf-96b8-4443-8f17-9b5d3dd0cfef" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/dc1c8d38-310c-461a-8dfe-1524340297b3" />
 
 **Features and Notes**  
 - **32 registers** x **32 bits**: Storage for CPU computation
