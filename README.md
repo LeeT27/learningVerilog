@@ -9,7 +9,7 @@ This repository documents my journey of self-studying Verilog from the ground up
 With interests in **semiconductor design** and **embedded systems**, I wanted a head start with an **HDL** as the skill is fundamental for both career paths. This foundation would prepare me to design and test larger digital systems in an industry setting, as building them physically eventually becomes too complex.
 
 ## [Project 1: AND-OR Logic Circuit](https://github.com/LeeT27/learningVerilog/tree/main/AND-OR%20Logic%20Circuit)
-My first Verilog project where simulated **(A AND B) OR C** in a waveform using basic logic gates
+My first Verilog project where I simulated **(A AND B) OR C** in a waveform using basic logic gates
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/1c89cbc7-266d-41fd-9b62-3cc2edba1358" /><br>
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/6e2d9100-16e8-4d67-875c-3d3085666311" />
