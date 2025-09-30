@@ -1,11 +1,12 @@
-Name: Ethan Lee  
-netID: (ethanjl5)  
-UIN: 660582957  
+**Name:** Ethan Lee  
+**Education:** University of Illinois Urbana-Champaign
+**Major:** Computer Engineering
+**Year:** Freshman
 
 # learningVerilog
-This repository documents my journey self studying Verilog from the ground up, from combining basic gate modules to creating a **full CPU**. To simulate my work, I used **Icarus Verilog**, **GTKWave**, and occasionally the **terminal** to show testbench inputs and outputs. Rather than just memorizing Verilog syntax, I had a big focus on understanding the **fundamentals of digital design**. My projects are intended for people who already have Verilog knowledge with the goal to showcase my personal learning process rather than teaching the language.
+This repository documents my journey of self-studying Verilog from the ground up, from combining basic gate modules to creating a **full CPU**. I simulated my work using **Icarus Verilog**, **GTKWave**, and occasionally the **terminal** with custom testbenches. Despite learning Verilog syntax, my primary focus was actually understanding the **digital design principles** behind each project. These projects are intended to showcase my personal learning process and experiences rather than teaching the language to begineers.
 
-As a UIUC freshman studying **Computer Engineering**, I wanted a head start with an **HDL** because careers in **semiconductor design** and **embedded systems**, fields I am really interested in, require a strong foundation in **hardware description languages** as they are essential for describing and simulating digital systems.
+With interests in **semiconductor design** and **embedded systems**, I wanted a head start with an **HDL**. Having a strong foundation in **hardware description languages** are needed to design and test larger digital systems, where building them physically becomes too complex for industry standards.
 
 ## [Project 1: AND-OR Logic Circuit](https://github.com/LeeT27/learningVerilog/tree/main/AND-OR%20Logic%20Circuit)
 My first Verilog project where simulated **(A AND B) OR C** in a waveform using basic logic gates
@@ -110,7 +111,7 @@ A **32×32** register file that allows for **two reads** and **one write**
 ## [Project 7: 128x32 RAM](https://github.com/LeeT27/learningVerilog/tree/main/32x32%20Register%20File)
 A **128×32** RAM module that allows for **one read** and **one write** per clock cycle
 
-<img width="400" alt="image" src="https://github.com/user-attachments/assets/89af7beb-c9c6-4073-96bc-04f284e0fb7d" /><br>
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/8234970b-44df-444e-bb82-d814d3ebcb3d" /><br>
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/dc1c8d38-310c-461a-8dfe-1524340297b3" />
 
 **Features and Notes**  
