@@ -116,7 +116,7 @@ A **128×32** RAM module that allows for **one read** and **one write** per cloc
 
 **Features and Notes**  
 - Similar to the register file, except:
-  - Reading is now synchronous, therefore reads and writes both occur every rising clock edge
+  - Reading is now **synchronous**, therefore reads and writes both occur every rising clock edge
   - One read output instead of two
   - Read and write share the same address input
   - Word `0` can be overwritten
@@ -127,8 +127,8 @@ A **128×32** RAM module that allows for **one read** and **one write** per cloc
 - **Reset** clears memory and output if equal to `1`
 - Learned to use **module parameters** to easily adjust word size and the number of words
 - Gained an understanding of the RAM's role for a CPU
-  - Provides more storage than registers to hold long term data for programs and instructions
-  - Gives faster access for the CPU compared to slower storage such as SSD or hard drives
+  - Provides **more** storage than registers to hold **long term** data for programs and instructions
+  - Gives **faster** access for the CPU compared to slower storage such as SSD or hard drives
 
 To do:  
 Single clock CPU    
