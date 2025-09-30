@@ -85,7 +85,7 @@ A 32-bit ALU that calculates arithmetic and bitwise operations with a zero indic
   - Performs operations using register values or inputs
   - Returns results back to registers or memory based off the CPU instructions
 
-## [Project 6: 32x32 Register File]()
+## [Project 6: 32x32 Register File](https://github.com/LeeT27/learningVerilog/tree/main/32x32%20Register%20File)
 A **32×32** register file that allows for **two reads** and a **write**
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/89af7beb-c9c6-4073-96bc-04f284e0fb7d" /><br>
