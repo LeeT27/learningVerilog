@@ -4,9 +4,9 @@
 **Year:** Freshman
 
 # learningVerilog
-This repository documents my journey of self-studying Verilog from the ground up, from combining basic gate modules to creating a **full CPU**. I simulated my work using **Icarus Verilog**, **GTKWave**, and occasionally the **terminal** with custom testbenches. Despite learning Verilog syntax, my primary focus was actually understanding the **digital design principles** behind each project. These projects are intended to showcase my personal learning process and experiences rather than teaching the language to begineers.
+This repository documents my journey of self-studying Verilog from the ground up, from combining basic gate modules to creating a **full CPU**. I simulated my work using **Icarus Verilog**, **GTKWave**, and occasionally the **terminal** with custom testbenches. Despite learning Verilog syntax, my primary focus was actually understanding the **digital design principles** behind each project. These projects are intended to showcase my personal learning process and experiences rather than teaching the language to beginners.
 
-With interests in **semiconductor design** and **embedded systems**, I wanted a head start with an **HDL**. Having a strong foundation in **hardware description languages** are needed to design and test larger digital systems, where building them physically becomes too complex for industry standards.
+With interests in **semiconductor design** and **embedded systems**, I wanted a head start with an **HDL**. Having a strong foundation in **hardware description languages** is needed to design and test larger digital systems, where building them physically becomes too complex for industry standards.
 
 ## [Project 1: AND-OR Logic Circuit](https://github.com/LeeT27/learningVerilog/tree/main/AND-OR%20Logic%20Circuit)
 My first Verilog project where simulated **(A AND B) OR C** in a waveform using basic logic gates
@@ -19,7 +19,7 @@ My first Verilog project where simulated **(A AND B) OR C** in a waveform using 
   - Initialized logic gate modules (`and_gate`, `or_gate`) with two input ports and one output
   - Created a top module to combine sub-modules to create the corresponding gate logic
 - Created a testbench to test every input combination `a`, `b`, and `c`
-- Learned to simulate my code using **Icarus Verilog** and analyse waveforms with **GTKWave**
+- Learned to simulate my code using **Icarus Verilog** and analyze waveforms with **GTKWave**
 - Generated and analyzed waveform files (`.vcd`) using the terminal to confirm truth table outputs
 
 ## [Project 2: 8-Bit RCA](https://github.com/LeeT27/learningVerilog/tree/main/8-Bit%20RCA)
@@ -35,7 +35,7 @@ A 8-bit ripple carry adder that computes the sum of two 8-bit inputs, returning 
   - Extra wire to hold carry bit data
 - Accommodated an **extra bit in the top module output** to handle carry-out and prevent overflow
 - Learned to testbench results to the terminal using `$display`
-- Learned to initialize **multi-bit inputs, outputs, wires, and registers** e.g. `input[7:0] a;`
+- Learned to initialize **multi-bit inputs, outputs, wires, and registers** e.g. `input [7:0] a;`
 - Learned to create loops and multiple instances of modules with keyword `generate`
 
 ## [Project 3: 32-Bit 4x8-to-1 MUX](https://github.com/LeeT27/learningVerilog/tree/main/32-Bit%204x8-to-1%20MUX)
@@ -112,11 +112,11 @@ A **32×32** register file that allows for **two reads** and **one write**
 A **128×32** RAM module that allows for **one read** and **one write** per clock cycle
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/8234970b-44df-444e-bb82-d814d3ebcb3d" /><br>
-<img width="600" alt="image" src="https://github.com/user-attachments/assets/dc1c8d38-310c-461a-8dfe-1524340297b3" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/43ec57ad-64f0-4db4-84d5-b076b513bf03" />
 
 **Features and Notes**  
 - Similar to the register file, except:
-  - Reading is now sequential, therefore reads and writes both occur every rising clock edge
+  - Reading is now synchronous, therefore reads and writes both occur every rising clock edge
   - One read output instead of two
   - Read and write share the same address input
   - Word `0` can be overwritten
@@ -124,6 +124,8 @@ A **128×32** RAM module that allows for **one read** and **one write** per cloc
 - **One read port**: Reads value at selected word every rising clock edge (`posedge clk`)
 - **One write port**: Writes on a word every rising clock edge when `write_RAM = 1`
 - **7-bit selector**: Selects word address from 0-127
+- **Reset** clears memory and output if equal to `1`
+- Learned to use **module parameters** to easily adjust word size and the number of words
 - Gained an understanding of the RAM's role for a CPU
   - Provides more storage than registers to hold long term data for programs and instructions
   - Gives faster access for the CPU compared to slower storage such as SSD or hard drives
