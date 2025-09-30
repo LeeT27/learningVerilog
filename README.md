@@ -108,7 +108,7 @@ A **32×32** register file that allows for **two reads** and **one write**
   - Store temporary values for computations
   - ALU reads registers, performs calculations, and writes back on register or RAM
 
-## [Project 7: 128x32 RAM](https://github.com/LeeT27/learningVerilog/tree/main/32x32%20Register%20File)
+## [Project 7: 128x32 RAM](https://github.com/LeeT27/learningVerilog/tree/main/128x32%20RAM)
 A **128×32** RAM module that allows for **one read** and **one write** per clock cycle
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/8234970b-44df-444e-bb82-d814d3ebcb3d" /><br>
