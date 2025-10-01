@@ -155,7 +155,7 @@ A **single-cycle CPU** that executes instructions from my **128×32** RAM.
           - (I am aware this deviates from the standard MIPS-style CPU as no offset bits are present, but this is for simplicity sake)
         - **J-type**: Changes PC value
           - `[25:0]`: New PC value
-    - Opcode combinations:
+    - Opcode actions:
       - ADD (`000`): Adds two registers and writes to a register
       - SUB (`001`): Subtracts two registers and writes to a register
       - MULT (`010`): Multiplies two registers and writes to a register
