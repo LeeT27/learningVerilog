@@ -164,7 +164,7 @@ A **single-cycle CPU** that executes instructions from my **128×32** RAM.
   4. Results are written back to RAM or register
   5. PC increments to next instruction (+1)
 
-#### CPU Real World Application: Average Mile Time of a Marathon
+### CPU Real World Application: Average Mile Time of a Marathon
 
 
 To do:   
