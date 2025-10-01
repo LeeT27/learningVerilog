@@ -129,6 +129,15 @@ A **128×32** RAM module that allows for **one read** and **one write** per cloc
 - Gained an understanding of the RAM's role for a CPU
   - Provides **more** storage than registers to hold **long term** data for programs and instructions
   - Gives **faster** access for the CPU compared to slower storage such as SSD or hard drives
+ 
+## [Project 8: Single-Cycle CPU]()
+A **single-cycle CPU** that executes instructions from a **128×32** RAM
+
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/8234970b-44df-444e-bb82-d814d3ebcb3d" /><br>
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/43ec57ad-64f0-4db4-84d5-b076b513bf03" />
+
+**Features and Notes**  
+- 
 
 To do:  
 Single clock CPU    
