@@ -137,19 +137,24 @@ A **single-cycle CPU** that executes instructions from my **128×32** RAM.
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/43ec57ad-64f0-4db4-84d5-b076b513bf03" />
 
 **Features and Notes**  
-- Combines modules from my previous projects such as the **ALU**, **register file**, and **RAM** to perform actions every clock cycle
-- Created a **PC counter** module that increments by 4 every rising clock edge to cycle through RAM instructions
-- Created a **control unit** module that decodes the RAM instruction in order to provide action signals
-  - **ADD** (`000`): Adds two registers and writes to a register
-  - **SUB** (`001`): Subtracts two registers and writes to a register
-  - **MULT** (`010`): Multiplies two registers and writes to a register
-  - **DIV** (`011`): Divides two register values and writes to a register
-  - **LOAD** (`100`): Loads RAM value into register
-  - **STORE** (`101`): Stores register value into RAM
-  - **JUMP** (`110`): Changes PC value to either loop or skip instructions
-  - **NOP** (`111`): No operation for one cycle
+- The top module, **CPU**, combines submodules from previous projects such as the **ALU**, **register file**, and **RAM** + new modules to perform actions every clock cycle
+- **PC counter** (new): Increments every rising clock edge to cycle through RAM instructions
+  - `Reset` input sets PC back to zero 
+  - Implemented `always@(posedge reset)` so that resetting doesn't wait till rising clock edge
+- **Control unit** (new): Decodes the RAM instruction in order to provide action signals
+  - ADD (`000`): Adds two registers and writes to a register
+  - SUB (`001`): Subtracts two registers and writes to a register
+  - MULT (`010`): Multiplies two registers and writes to a register
+  - DIV (`011`): Divides two register values and writes to a register
+  - LOAD (`100`): Loads RAM value into register
+  - STORE (`101`): Stores register value into RAM
+  - JUMP (`110`): Changes PC value to either loop or skip instructions
+  - NOP (`111`): No operation for one cycle
+- **ALU**: Same as before, but now has a division operator
+- **Register file**: Same as before
+- **RAM**: Same as before
 - Learned the full CPU cycle process for one clock cycle
-  1. PC increments to next RAM instruction
+  1. PC increments to RAM instruction
   2. Control unit decodes the 32-bit instruction, determining the action and selecting source/destination registers or RAM addresses
   3. Execution
     - ALU performs arithmetic and logical operations
@@ -157,7 +162,7 @@ A **single-cycle CPU** that executes instructions from my **128×32** RAM.
     - Or PC is set to a new value using jump instructions
     - Or no actions occur (NOP)
   4. Results are written back to RAM or register
-  5. PC increments to next instruction (+4)
+  5. PC increments to next instruction (+1)
 
 
 To do:  
