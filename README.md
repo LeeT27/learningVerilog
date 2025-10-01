@@ -152,7 +152,7 @@ A **single-cycle CPU** that executes instructions from my **128×32** RAM.
         - **I-type**: Operations in one register and one memory (RAM)
           - `[25:21]`: 5-bit base register address
           - `[20:16]`: 5-bit memory (RAM) address
-          - I am aware this deviates from the standard MIPS-style CPU as no offset bits are present, but this is for simplicity sake
+          - (I am aware this deviates from the standard MIPS-style CPU as no offset bits are present, but this is for simplicity sake)
         - **J-type**: Changes PC value
           - `[25:0]`: New PC value
     - Opcode combinations:
