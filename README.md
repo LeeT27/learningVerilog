@@ -140,20 +140,20 @@ A **single-cycle CPU** that executes instructions from my **128×32** RAM.
 - Combines modules from my previous projects such as the **ALU**, **register file**, and **RAM** to perform actions every clock cycle
 - Created a **PC counter** module that increments by 4 every rising clock edge to cycle through RAM instructions
 - Created a **control unit** module that decodes the RAM instruction in order to provide action signals
-  - ADD (000): Adds two registers and writes to a register
-  - SUB (001): Subtracts two registers and writes to a register
-  - MULT (010): Multiplies two registers and writes to a register
-  - DIV (011): Divides two register values and writes to a register
-  - LOAD (100): Loads RAM value into register
-  - STORE (101): Stores register value into RAM
-  - JUMP (110): Changes PC value to either loop back or skip instructions
-  - NOP (111): No operation, wait for next cycle
+  - **ADD** (`000`): Adds two registers and writes to a register
+  - **SUB** (`001`): Subtracts two registers and writes to a register
+  - **MULT** (`010`): Multiplies two registers and writes to a register
+  - **DIV** (`011`): Divides two register values and writes to a register
+  - **LOAD** (`100`): Loads RAM value into register
+  - **STORE** (`101`): Stores register value into RAM
+  - **JUMP** (`110`): Changes PC value to either loop or skip instructions
+  - **NOP** (`111`): No operation for one cycle
 - Learned the full CPU cycle process for one clock cycle
   1. PC increments to next RAM instruction
   2. Control unit decodes the 32-bit instruction, determining the action and selecting source/destination registers or RAM addresses
   3. Execution
     - ALU performs arithmetic and logical operations
-    - Or data is trasferred between the RAM and registers
+    - Or data is transferred between the RAM and registers
     - Or PC is set to a new value using jump instructions
     - Or no actions occur (NOP)
   4. Results are written back to RAM or register
