@@ -151,7 +151,8 @@ A **single-cycle CPU** that executes instructions from my **128×32** RAM.
           - `[10:8]`: 3-bit ALU operator selector
         - **I-type**: Operations in one register and one memory (RAM)
           - `[25:21]`: 5-bit base register address
-          - `[20:16]`: 5-bit memory address
+          - `[20:16]`: 5-bit memory (RAM) address
+          - I am aware this deviates from the standard MIPS-style CPU as no offset bits are present, but this is for simplicity sake
         - **J-type**: Changes PC value
           - `[25:0]`: New PC value
     - Opcode combinations:
@@ -161,7 +162,7 @@ A **single-cycle CPU** that executes instructions from my **128×32** RAM.
       - DIV (`011`): Divides two register values and writes to a register
       - LOAD (`100`): Loads RAM value into register
       - STORE (`101`): Stores register value into RAM
-      - JUMP (`110`): Changes PC value to either loop or skip instructions
+      - JUMP (`110`): Changes PC value
       - NOP (`111`): No operation for one cycle
   - **ALU**: Same as before, but now has multiplication and division
   - **Register file**: Same as before
