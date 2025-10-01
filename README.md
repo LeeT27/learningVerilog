@@ -140,7 +140,7 @@ A **single-cycle CPU** that executes instructions from my **128×32** RAM.
 - The top module, **CPU**, combines submodules from previous projects such as the **ALU**, **register file**, and **RAM** + new modules to perform actions every clock cycle. Here are the submodules:
   - **PC counter** (new): Increments every rising clock edge to cycle through RAM instructions
     - `Reset` input sets PC back to zero 
-    - Implemented `always@(posedge reset)` so that resetting doesn't wait till rising clock edge
+    - Implemented `always@(posedge reset)` - Resets immediately instead of waiting for rising edge
   - **Control unit** (new): Decodes the RAM instruction in order to provide action signals
     - ADD (`000`): Adds two registers and writes to a register
     - SUB (`001`): Subtracts two registers and writes to a register
@@ -158,7 +158,7 @@ A **single-cycle CPU** that executes instructions from my **128×32** RAM.
   2. Control unit decodes the 32-bit instruction, determining the action and selecting source/destination registers or RAM addresses
   3. Execution
     - ALU performs arithmetic and logical operations
-    - Or data is transferred between the RAM and registers
+    - Or data transfers between the RAM and registers
     - Or PC is set to a new value using jump instructions
     - Or no actions occur (NOP)
   4. Results are written back to RAM or register
