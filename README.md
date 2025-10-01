@@ -131,7 +131,7 @@ A **128×32** RAM module that allows for **one read** and **one write** per cloc
   - Gives **faster** access for the CPU compared to slower storage such as SSD or hard drives
  
 ## [Project 8: Single-Cycle CPU]()
-A **single-cycle CPU** that executes instructions from my **128×32** RAM.
+A **single-cycle CPU** that executes instructions from **128×32** RAM.
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/5b968ac1-d5c1-4cb7-8fc7-6b035e04db85" /><br>
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/43ec57ad-64f0-4db4-84d5-b076b513bf03" />
