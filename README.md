@@ -142,14 +142,27 @@ A **single-cycle CPU** that executes instructions from my **128×32** RAM.
     - `Reset` input sets PC back to zero 
     - Implemented `always@(posedge reset)` - Resets immediately instead of waiting for rising edge
   - **Control unit** (new): Decodes the RAM instruction in order to provide action signals
-    - ADD (`000`): Adds two registers and writes to a register
-    - SUB (`001`): Subtracts two registers and writes to a register
-    - MULT (`010`): Multiplies two registers and writes to a register
-    - DIV (`011`): Divides two register values and writes to a register
-    - LOAD (`100`): Loads RAM value into register
-    - STORE (`101`): Stores register value into RAM
-    - JUMP (`110`): Changes PC value to either loop or skip instructions
-    - NOP (`111`): No operation for one cycle
+    - Typical CPU instruction decode format:
+      - `[31:26]`: 6-bit opcode chooses type of action
+        - **R-type**: Operations in only registers
+          - `[25:21]`: 5-bit source register 1 address
+          - `[20:16]`: 5-bit source register 2 address
+          - `[15:11]`: 5-bit destination register address
+          - `[10:8]`: 3-bit ALU operator selector
+        - **I-type**: Operations in one register and one memory (RAM)
+          - `[25:21]`: 5-bit base register address
+          - `[20:16]`: 5-bit memory address
+        - **J-type**: Changes PC value
+          - `[25:0]`: New PC value
+    - Opcode combinations:
+      - ADD (`000`): Adds two registers and writes to a register
+      - SUB (`001`): Subtracts two registers and writes to a register
+      - MULT (`010`): Multiplies two registers and writes to a register
+      - DIV (`011`): Divides two register values and writes to a register
+      - LOAD (`100`): Loads RAM value into register
+      - STORE (`101`): Stores register value into RAM
+      - JUMP (`110`): Changes PC value to either loop or skip instructions
+      - NOP (`111`): No operation for one cycle
   - **ALU**: Same as before, but now has multiplication and division
   - **Register file**: Same as before
   - **RAM**: Same as before
