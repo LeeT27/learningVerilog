@@ -169,7 +169,7 @@ A **single-cycle CPU** that executes instructions from my **128×32** RAM.
 
 <img width="200" alt="image" src="https://github.com/user-attachments/assets/3b812f98-fe91-48ba-ac4d-6d2dbd595928" />
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/7dfb4285-7e8e-450b-8948-5d54213202db" /><br>
-<sub><sup>^ Thats me by the way running the 2024 San Francisco Marathon ;)</sup></sub>
+<sub><sup>^ Thats me by the way running the 2024 San Francisco Marathon ;)</sup></sub>  
 
 In planet X, Bobby woke up in his hotel to compete in the **26.2 mile Kazoo Park Marathon** that begins in 1 hour. Unfortunately, his running watch's charging cable broke and all stopwatches in planet X can only measure up to **10 minutes** at a time.
 
