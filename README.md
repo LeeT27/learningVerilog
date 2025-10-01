@@ -150,7 +150,7 @@ A **single-cycle CPU** that executes instructions from my **128×32** RAM.
   - STORE (`101`): Stores register value into RAM
   - JUMP (`110`): Changes PC value to either loop or skip instructions
   - NOP (`111`): No operation for one cycle
-- **ALU**: Same as before, but now has a division operator
+- **ALU**: Same as before, but now has multiplication and division
 - **Register file**: Same as before
 - **RAM**: Same as before
 - Learned the full CPU cycle process for one clock cycle
