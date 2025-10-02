@@ -149,7 +149,6 @@ A **single-cycle CPU** that executes instructions from **128×32** RAM.
           - `[25:21]`: 5-bit register 1 address `rs`
           - `[20:16]`: 5-bit register 2 address `rt`
           - `[15:11]`: 5-bit destination register address `rd`
-          - `[10:8]`: 3-bit ALU operator selector `alu_op`
         - **I-type**: Operations in one register and one memory (RAM)
           - `[25:19]`: 7-bit memory address `ls`
           - `[18:14]`: 5-bit register address `lt`
