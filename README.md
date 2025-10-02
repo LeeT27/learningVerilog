@@ -137,24 +137,25 @@ A **single-cycle CPU** that executes instructions from **128×32** RAM.
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/43ec57ad-64f0-4db4-84d5-b076b513bf03" />
 
 **Features and Notes**  
-- The top module, **CPU**, combines submodules from previous projects such as the **ALU**, **register file**, and **RAM** + new modules to perform actions every clock cycle. Here are the submodules:
+- The top module, **CPU**, combines submodules from previous projects such as the **ALU**, **register file**, and **RAM** + new modules such as the **PC** and **control unit** to perform actions every clock cycle. Here are the submodules:
   - **PC counter** (new): Increments every rising clock edge to cycle through RAM instructions
     - `Reset` input sets PC back to zero 
     - Implemented `always@(posedge reset)` - Resets immediately instead of waiting for rising edge
+    - Implemented jump that moves the next instruction to a different PC value
   - **Control unit** (new): Decodes the RAM instruction in order to provide action signals
     - Typical CPU instruction decode format:
       - `[31:26]`: 6-bit opcode chooses type of action
-        - **R-type**: Operations in only registers
-          - `[25:21]`: 5-bit source register 1 address
-          - `[20:16]`: 5-bit source register 2 address
-          - `[15:11]`: 5-bit destination register address
-          - `[10:8]`: 3-bit ALU operator selector
-        - **I-type**: Operations in one register and one memory (RAM)
-          - `[25:21]`: 5-bit base register address
-          - `[20:16]`: 5-bit memory (RAM) address
+        - **R-type**: Operations in only registers (<code style="color : red">00000</code|00000|00000|00000|000|00000000)
+          - `[25:21]`: 5-bit register 1 address `rs`
+          - `[20:16]`: 5-bit register 2 address `rt`
+          - `[15:11]`: 5-bit destination register address `rd`
+          - `[10:8]`: 3-bit ALU operator selector `alu_op`
+        - **I-type**: Operations in one register and one memory (RAM) (00000|0000000|00000|00000000000000)
+          - `[25:19]`: 7-bit memory address
+          - `[18:14]`: 5-bit register address
           - (I am aware this deviates from the standard MIPS-style CPU as no offset bits are present, but this is for learning simplicity)
-        - **J-type**: Changes PC value
-          - `[25:0]`: New PC value
+        - **J-type**: Changes PC value (00000|00000000000000000000|0000000)
+          - `[6:0]`: New PC value
     - Opcode actions:
       - ADD (`000`): Adds two registers and writes to a register
       - SUB (`001`): Subtracts two registers and writes to a register
