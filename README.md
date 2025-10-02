@@ -145,7 +145,7 @@ A **single-cycle CPU** that executes instructions from **128×32** RAM.
   - **Control unit** (new): Decodes the RAM instruction in order to provide action signals
     - Typical CPU instruction decode format:
       - `[31:26]`: 6-bit opcode chooses type of action
-        - **R-type**: Operations in only registers (<code style="color : red">00000</code|00000|00000|00000|000|00000000)
+        - **R-type**: Operations in only registers (<code style="color : red">00000</code>|00000|00000|00000|000|00000000)
           - `[25:21]`: 5-bit register 1 address `rs`
           - `[20:16]`: 5-bit register 2 address `rt`
           - `[15:11]`: 5-bit destination register address `rd`
