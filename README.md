@@ -151,11 +151,12 @@ A **single-cycle CPU** that executes instructions from **128×32** RAM.
           - `[15:11]`: 5-bit destination register address `rd`
           - `[10:8]`: 3-bit ALU operator selector `alu_op`
         - **I-type**: Operations in one register and one memory (RAM)
-          - `[25:19]`: 7-bit memory address
-          - `[18:14]`: 5-bit register address
+          - `[25:19]`: 7-bit memory address `ls`
+          - `[18:14]`: 5-bit register address `lt`
           - (I am aware this deviates from the standard MIPS-style CPU as no offset bits are present, but this is for learning simplicity)
         - **J-type**: Changes PC value
-          - `[6:0]`: New PC value
+          - `[6:0]`: New PC value `jump_address`
+      - Due to different sizes in the RAM and register, bits are assigned differently for R and I type instructions
     - Opcode actions:
       - ADD (`000`): Adds two registers and writes to a register
       - SUB (`001`): Subtracts two registers and writes to a register
