@@ -145,16 +145,16 @@ A **single-cycle CPU** that executes instructions from **128×32** RAM.
   - **Control unit** (new): Decodes the RAM instruction in order to provide action signals
     - Typical CPU instruction decode format:
       - `[31:26]`: 6-bit opcode chooses type of action
-        - **R-type**: Operations in only registers (<code style="color : red">00000</code>|00000|00000|00000|000|00000000)
+        - **R-type**: Operations in only registers
           - `[25:21]`: 5-bit register 1 address `rs`
           - `[20:16]`: 5-bit register 2 address `rt`
           - `[15:11]`: 5-bit destination register address `rd`
           - `[10:8]`: 3-bit ALU operator selector `alu_op`
-        - **I-type**: Operations in one register and one memory (RAM) (00000|0000000|00000|00000000000000)
+        - **I-type**: Operations in one register and one memory (RAM)
           - `[25:19]`: 7-bit memory address
           - `[18:14]`: 5-bit register address
           - (I am aware this deviates from the standard MIPS-style CPU as no offset bits are present, but this is for learning simplicity)
-        - **J-type**: Changes PC value (00000|00000000000000000000|0000000)
+        - **J-type**: Changes PC value
           - `[6:0]`: New PC value
     - Opcode actions:
       - ADD (`000`): Adds two registers and writes to a register
@@ -178,6 +178,7 @@ A **single-cycle CPU** that executes instructions from **128×32** RAM.
     - Or no actions occur (NOP)
   4. Results are written back to RAM or register
   5. PC increments to next instruction (+1)
+- Testbench initializes all 128 RAM words without loop for visual purposes
 
 ### CPU Real World Application: Average Mile Time of a Marathon
 #### Prompt:
