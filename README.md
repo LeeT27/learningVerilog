@@ -194,13 +194,13 @@ A **single-cycle CPU** that executes instructions from **128×32** RAM.
 
 This project took a **VERY LONG** time to debug and get each instruction action working. Here is a list of the biggest problems that I encountered when building the CPU.
 
-- My previous projects, specifically the register file and RAM, had different address sizes, 5 and 7 bits, forcing me to work around different bit assignments for R and I type commands.
-- RAM reads occurred after the rising clock edge, and therefore would write to the register a tick later than expected. I fixed this by making RAM reading combinational instead of sequential so that RAM data is ready to write in the same clock cycle
-- Kept assigning the wrong registers when more than two got involved, leading to unintended calculations (R3,R4,R5,R6,R7,R7)
-- Miscounted bits in commands numerous times, leading to accidental bit shifts when assigning opcodes and RAM/register addresses (forgetting a zero at the end)
-- When storing a register into RAM, the address kept taking the wrong bits due to the mismatching address sizes, so I had the register take a third address specifically for I type instructions
-- I forgot to match instance names in the test bench so referring to RAM values like `cpu.f2.memory[0]` didn't correctly show
-- Forgot to reset mem_read, mem_write, reg_write, and jump at the beginning of each instruction
+- My previous projects, specifically the register file and RAM, had **different address sizes**, 5 and 7 bits, forcing me to work around different bit assignments for R and I type commands.
+- RAM reads occurred after the rising clock edge, and therefore would write to the register **a tick later than expected**. I fixed this by making RAM reading combinational instead of sequential so that RAM data is ready to write in the same clock cycle
+- Kept assigning the wrong registers when more than two got involved, leading to **unintended calculations** (R3,R4,R5,R6,R7,R7)
+- Miscounted bits in commands numerous times, leading to **accidental bit shifts** when assigning opcodes and RAM/register addresses (forgetting a zero at the end)
+- When storing a register into RAM, the address kept taking the wrong bits due to the mismatching address sizes, so I had the register take a **third address** specifically for I type instructions
+- I forgot to **match instance names** in the test bench so referring to RAM values like `cpu.f2.memory[0]` didn't correctly show
+- Forgot to reset toggles `mem_read`, `mem_write`, `reg_write`, and `jump` at the beginning of each instruction, unintentionally leaving a toggle on
 
 ### CPU Real World Application: Average Mile Time of a Marathon
 #### Prompt:
