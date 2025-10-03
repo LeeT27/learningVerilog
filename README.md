@@ -211,9 +211,13 @@ This project took a **VERY LONG** time to debug and get each instruction action 
 
 In planet X, Bobby woke up in his hotel to compete in the **26.2 mile Kazoo Park Marathon** that begins in an hour. Unfortunately, his running watch's charging cable broke and all stopwatches in planet X can only measure up to ten minutes at a time. Bobby works around this by having his good friend, Jack, drive to each mile marker and record every mile split on paper. After Bobby finishes the marathon, he asks Jack, "What is my average mile time?" Jack is given a **single-cycle Verilog CPU** (from above) and doesn't know how to write the instructions to calculate the average.
 
-Create a CPU program by editing the RAM instructions to calculate the average mile time of Bobby's marathon and store the result back to the memory
-- All the split times in seconds are already written in RAM words 64 through 90
-- The last 0.2 mile split is still stored in a whole word.
+Create a CPU program by editing the RAM instructions to calculate the average mile time of Bobby's marathon and store minutes in **memory[126]** along with remaining seconds in **memory[127]**
+- All the split times in seconds are already written in **memory[64]** through **memory[90]**
+- The last 0.2 mile split is still stored in a whole word
 
 ### Solution
+1. Sum all the split times in seconds
+  - For all 27 splits, `LOAD` a split time from memory[64] through memory[90] time while register 2 stores the total sum in seconds
+
+
 ###### 
