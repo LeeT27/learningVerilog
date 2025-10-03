@@ -130,7 +130,7 @@ A **128×32** RAM module that allows for **one read** and **one write** per cloc
   - Provides **more** storage than registers to hold **long term** data for programs and instructions
   - Gives **faster** access for the CPU compared to slower storage such as SSD or hard drives
  
-## [Project 8: Single-Cycle CPU]()
+## [Project 8: Single-Cycle CPU](https://github.com/LeeT27/learningVerilog/tree/main/Single-Cycle%20CPU)
 A **single-cycle CPU** that executes instructions from **128×32** RAM.
 
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/5b968ac1-d5c1-4cb7-8fc7-6b035e04db85" /><br>
