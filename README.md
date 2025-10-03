@@ -185,9 +185,11 @@ A **single-cycle CPU** that executes instructions from **128×32** RAM.
 
 This project took a **VERY LONG** time to debug and get each instruction action working. Here is a list of the biggest problems that I encountered and fixed when building the CPU.
 
-- RAM reads occured after the rising clock edge, and therefore would write to the register a tick later than expected.
-  - I changed RAM reading to be combinational instead of sequential so that RAM data is immediately available to the register during the same clock cycle
-- Miscounted bits in commands numerous times, leading to accidental bit shifts when assigning RAM/register addresses
+- My previous projects, specifically the register file and RAM, had different address sizes, forcing me to work around very different bit assignments for R and I type commands
+- RAM reads occured after the rising clock edge, and therefore would write to the register a tick later than expected. I fixed this by making RAM reading combinational instead of sequential so that RAM data is ready to write to the register in the same clock cycles
+- Miscounted bits in commands numerous times, leading to accidental bit shifts when assigning opcodes and RAM/register addresses
+- Accidently initialized opcode with 3 bits instead of 6, confusing it for the ALU operator
+- When storing a register into RAM, the address kept taking the wrong bits due to the mismatching address sizes, so I had the register take a third address specifically for I type instructions
 - 
 
 ### CPU Real World Application: Average Mile Time of a Marathon
