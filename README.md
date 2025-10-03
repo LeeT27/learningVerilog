@@ -221,12 +221,12 @@ Create a CPU program by editing the RAM instructions to calculate the average mi
 
 ### Solution
 #### 1. Sum all the split times in seconds
-##### For all 27 splits, `LOAD` a split time from memory[64] through memory[90] into register 1, and then `ADD` **register 1** and **register 2** to store the total sum in **register 2**
+##### For all 27 splits, `LOAD` a split time from memory[64] through memory[90] into R1, and then `ADD` R1 and R2 stored back to R2 (total sum)
 #### 2. Divide by 26.2
 ##### Since registers don't support fractional divisions, we can just multiply by 10 and divide by 262, allowing us to divide by 26.2 without using fractions. First, `LOAD` the conversion constants into R3, R4, and R5, corresponding with 60, 262, 10. Next, `MULT` R2 and R5 stored back to R2 and then `DIV` R2 and R4 stored back to R2 get seconds per mile
-3. Seperate minutes and remaining seconds
-To get minutes, `DIV` R2 and R3 stored into R6. This works because Verilog integer divison automatically cuts off the remainder. To get seconds, `MULT` R6 and R3 stored into R7, indicating how many seconds to subtract from the total to get the remainer. Lastly, `SUB` R2 and R7 stored into R8, which is the remaining seconds. To summarize, R6 stores minutes and R8 stores remaining seconds
-4. Store values back to RAM
-`STORE` R6 to memory[126] and `STORE` R8 to memory[128]
+#### 3. Seperate minutes and remaining seconds
+##### To get minutes, `DIV` R2 and R3 stored into R6. This works because Verilog integer divison automatically cuts off the remainder. To get seconds, `MULT` R6 and R3 stored into R7, indicating how many seconds to subtract from the total to get the remainer. Lastly, `SUB` R2 and R7 stored into R8, which is the remaining seconds. To summarize, R6 stores minutes and R8 stores remaining seconds
+#### 4. Store values back to RAM
+##### `STORE` R6 to memory[126] and `STORE` R8 to memory[128]
 
 ###### 
