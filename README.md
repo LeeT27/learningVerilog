@@ -231,4 +231,6 @@ Create a CPU program by editing the RAM instructions to calculate the average mi
 ### [Solution Testbench](https://github.com/LeeT27/learningVerilog/blob/main/Single-Cycle%20CPU/sim/cpu_tb.v)
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/36ef081b-ab48-430a-a175-068d992a7837" />
 <img width="400" alt="image" src="https://github.com/user-attachments/assets/59d208cf-8461-4055-a553-4f6381d36636" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/ee6f485e-3021-4e9e-a27a-6404a23f8c2e" />
+
 
