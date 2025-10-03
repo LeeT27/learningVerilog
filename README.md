@@ -181,11 +181,14 @@ A **single-cycle CPU** that executes instructions from **128×32** RAM.
 - Testbench initializes all 128 RAM words individually for visual and debugging purposes
   - Words 0 through 63 store instructions
   - Words 64 through 127 store data
-### Challenges and Changes
+### Challenges and Fixes
 
-This project took a **LONG** time to debug and get each instruction action working. Here is a list of the biggest problems that I had to fix when creating the CPU.
+This project took a **VERY LONG** time to debug and get each instruction action working. Here is a list of the biggest problems that I encountered and fixed when building the CPU.
 
-- Reads occured after the rising clock edge, therefore I changed 
+- RAM reads occured after the rising clock edge, and therefore would write to the register a tick later than expected.
+  - I changed RAM reading to be combinational instead of sequential so that RAM data is immediately available to the register during the same clock cycle
+- Miscounted bits in commands numerous times, leading to accidental bit shifts when assigning RAM/register addresses
+- 
 
 ### CPU Real World Application: Average Mile Time of a Marathon
 #### Prompt:
