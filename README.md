@@ -228,5 +228,7 @@ Create a CPU program by editing the RAM instructions to calculate the average mi
 ##### To get minutes, `DIV` R2 and R3 stored into R6. This works because Verilog integer divison automatically cuts off the remainder. To get seconds, `MULT` R6 and R3 stored into R7, indicating how many seconds to subtract from the total to get the remainer. Lastly, `SUB` R2 and R7 stored into R8, which is the remaining seconds. To summarize, R6 stores minutes and R8 stores remaining seconds
 #### 4. Store values back to RAM
 ##### `STORE` R6 to memory[126] and `STORE` R8 to memory[128]
+### [Solution Testbench](https://github.com/LeeT27/learningVerilog/blob/main/Single-Cycle%20CPU/sim/cpu_tb.v)
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/36ef081b-ab48-430a-a175-068d992a7837" />
+<img width="400" alt="image" src="https://github.com/user-attachments/assets/59d208cf-8461-4055-a553-4f6381d36636" />
 
-###### 
