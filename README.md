@@ -166,6 +166,10 @@ A **single-cycle CPU** that executes instructions from **128×32** RAM.
       - JUMP (`000110`): Changes PC value
       - NOP (`000111`): No operation for one cycle
     -  Here are some graphics I made representing each instruction format:
+      <img width="1597" height="704" alt="image" src="https://github.com/user-attachments/assets/63e2ce49-7203-49fd-bd7c-636e3555f5d6" />
+
+    
+
 - The ALU now has multiplication and division
 - Learned the full CPU cycle process for one clock cycle
   1. PC increments to RAM instruction
