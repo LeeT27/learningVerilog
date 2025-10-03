@@ -165,6 +165,7 @@ A **single-cycle CPU** that executes instructions from **128×32** RAM.
       - STORE (`000101`): Stores register value into RAM
       - JUMP (`000110`): Changes PC value
       - NOP (`000111`): No operation for one cycle
+    -  Here are some graphics I made representing each instruction format:
 - The ALU now has multiplication and division
 - Learned the full CPU cycle process for one clock cycle
   1. PC increments to RAM instruction
