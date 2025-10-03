@@ -166,7 +166,13 @@ A **single-cycle CPU** that executes instructions from **128×32** RAM.
       - JUMP (`000110`): Changes PC value
       - NOP (`000111`): No operation for one cycle
     -  Here are some graphics I made representing each instruction format:
-      <img width="1597" height="704" alt="image" src="https://github.com/user-attachments/assets/63e2ce49-7203-49fd-bd7c-636e3555f5d6" />
+      <img width="600" alt="image" src="https://github.com/user-attachments/assets/5e9da366-c407-4652-8d8c-a1809674c0f3" />
+      <img width="600" alt="image" src="https://github.com/user-attachments/assets/0b60fb7d-eb02-421f-b387-02daa7e7a16d" />
+      <img width="600" alt="image" src="https://github.com/user-attachments/assets/1bc3e51f-3e11-452f-9be6-c43719eb9a4b" />
+      
+
+
+
 
     
 
