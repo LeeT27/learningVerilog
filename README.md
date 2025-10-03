@@ -181,6 +181,11 @@ A **single-cycle CPU** that executes instructions from **128×32** RAM.
 - Testbench initializes all 128 RAM words individually for visual and debugging purposes
   - Words 0 through 63 store instructions
   - Words 64 through 127 store data
+### Challenges and Changes
+
+This project took a **LONG** time to debug and get each instruction action working. Here is a list of the biggest problems that I had to fix when creating the CPU.
+
+- Reads occured after the rising clock edge, therefore I changed 
 
 ### CPU Real World Application: Average Mile Time of a Marathon
 #### Prompt:
@@ -191,8 +196,8 @@ A **single-cycle CPU** that executes instructions from **128×32** RAM.
 
 In planet X, Bobby woke up in his hotel to compete in the **26.2 mile Kazoo Park Marathon** that begins in an hour. Unfortunately, his running watch's charging cable broke and all stopwatches in planet X can only measure up to ten minutes at a time. Bobby works around this by having his good friend, Jack, drive to each mile marker and record every mile split on paper. After Bobby finishes the marathon, he asks Jack, "What is my average mile time?" Jack is given a **single-cycle Verilog CPU** (from above) and doesn't know how to write the instructions to calculate the average.
 
-Create a CPU program by editing the RAM instructions to calculate the average mile time of Bobby's marathon and store the result back to the memory[127]
-- All the split times are already written in RAM words 64 through 90
+Create a CPU program by editing the RAM instructions to calculate the average mile time of Bobby's marathon and store the result back to the memory
+- All the split times in seconds are already written in RAM words 64 through 90
 - The last 0.2 mile split is still stored in a whole word.
 
 ### Solution
