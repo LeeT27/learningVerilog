@@ -217,8 +217,3 @@ Create a CPU program by editing the RAM instructions to calculate the average mi
 
 ### Solution
 ###### 
-
-To do:   
-VGA game  
-FPGA Implementation
-Final project
