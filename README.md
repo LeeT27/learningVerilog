@@ -192,7 +192,7 @@ A **single-cycle CPU** that executes instructions from **128×32** RAM.
   - Words 64 through 127 store data
 ### Challenges and Fixes
 
-This project took a **VERY LONG** time to debug and get each instruction action working. Here is a list of the biggest problems that I encountered and fixed when building the CPU.
+This project took a **VERY LONG** time to debug and get each instruction action working. Here is a list of the biggest problems that I encountered when building the CPU.
 
 - My previous projects, specifically the register file and RAM, had different address sizes, 5 and 7 bits, forcing me to work around different bit assignments for R and I type commands.
 - RAM reads occurred after the rising clock edge, and therefore would write to the register a tick later than expected. I fixed this by making RAM reading combinational instead of sequential so that RAM data is ready to write in the same clock cycle
