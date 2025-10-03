@@ -137,7 +137,7 @@ A **single-cycle CPU** that executes instructions from **128×32** RAM.
 <img width="600" alt="image" src="https://github.com/user-attachments/assets/43ec57ad-64f0-4db4-84d5-b076b513bf03" />
 
 **Features and Notes**  
-- The top module, **CPU**, combines submodules from previous projects such as the **ALU**, **register file**, and **RAM** + new modules such as the **PC** and **control unit** to perform actions every clock cycle. Here are the submodules:
+- The top module, **CPU**, combines submodules from previous projects such as the **ALU**, **register file**, and **RAM** + new modules such as the **PC** and **control unit** to perform actions every clock cycle. Here are the new submodules:
   - **PC counter** (new): Increments every rising clock edge to cycle through RAM instructions
     - `Reset` input sets PC back to zero 
     - Implemented `always@(posedge reset)` - Resets immediately instead of waiting for rising edge
