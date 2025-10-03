@@ -189,7 +189,7 @@ This project took a **VERY LONG** time to debug and get each instruction action 
 - Miscounted bits in commands numerous times, leading to accidental bit shifts when assigning opcodes and RAM/register addresses (forgetting a zero at the end)
 - When storing a register into RAM, the address kept taking the wrong bits due to the mismatching address sizes, so I had the register take a third address specifically for I type instructions
 - I forgot to match instance names in the test bench so referring to RAM values like `cpu.f2.memory[0]` didn't correctly show
-- 
+- Forgot to reset mem_read, mem_write, reg_write, and jump at the beginning of each instruction
 
 ### CPU Real World Application: Average Mile Time of a Marathon
 #### Prompt:
