@@ -1,12 +1,14 @@
 **Name:** Ethan Lee  
 **Education:** University of Illinois Urbana-Champaign  
-**Major:** Computer Engineering  
+**Major:** Electrical Engineering  
 **Year:** Freshman  
 
+
+September, 2025
 # learningVerilog
 This repository documents my journey of self-studying Verilog from the ground up, from combining basic gate modules to creating a **full CPU**. I simulated my work using **Icarus Verilog**, **GTKWave**, and occasionally the **terminal** with custom testbenches. Despite learning Verilog syntax, my primary focus was actually understanding the **digital design principles** behind each project. These projects are intended to showcase my personal learning process and experiences rather than teaching the language to beginners.
 
-With interests in **semiconductor design** and **digital design**, I wanted a head start with an **HDL** as the skill is fundamental for both career paths. This foundation would prepare me to design and test larger digital systems in an industry setting, as building them physically eventually becomes too complex.
+With interests in **embedded systems** and **digital design**, I wanted a head start with an **HDL** as the skill is fundamental for both career paths. This foundation would prepare me to design and test larger digital systems in an industry setting, as building them physically eventually becomes too complex.
 
 ## [Project 1: AND-OR Logic Circuit](https://github.com/LeeT27/learningVerilog/tree/main/AND-OR%20Logic%20Circuit)
 My first Verilog project where I simulated **(A AND B) OR C** in a waveform using basic logic gates
