@@ -1,6 +1,6 @@
 **Name:** Ethan Lee  
 **Education:** University of Illinois Urbana-Champaign  
-**Major:** Electrical Engineering  
+**Major:** Computer Engineering  
 **Year:** Freshman  
 
 
