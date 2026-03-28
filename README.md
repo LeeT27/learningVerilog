@@ -1,10 +1,10 @@
 **Name:** Ethan Lee  
 **Education:** University of Illinois Urbana-Champaign  
 **Major:** Computer Engineering  
-**Year:** Freshman  
+**Graduation Date:** May 2028
 
 
-September, 2025
+September 25, 2025
 # learningVerilog
 This repository documents my journey of self-studying Verilog from the ground up, from combining basic gate modules to creating a **full CPU**. I simulated my work using **Icarus Verilog**, **GTKWave**, and occasionally the **terminal** with custom testbenches. Despite learning Verilog syntax, my primary focus was actually understanding the **digital design principles** behind each project. These projects are intended to showcase my personal learning process and experiences rather than teaching the language to beginners.
 
